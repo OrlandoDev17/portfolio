@@ -2,26 +2,28 @@
 import BriefCaseIcon from '../icons/BriefCase.astro';
 import MessageIcon from '../icons/Message.astro';
 import DownloadIcon from '../icons/Download.astro';
-import SocialMedia from './SocialMedia.astro';
+import SocialMedia from '../components/SocialMedia.astro';
+
+import SectionContainer from '../components/SectionContainer.astro';
 ---
 
-<section
-  class="relative top-25 pt-10 px-64 flex items-center justify-center gap-26"
->
+<SectionContainer className="relative flex-row top-23 gap-26 dark:bg-zinc-800">
   <div class="flex flex-col items-start gap-4">
     <a
-      class="flex items-center gap-2 bg-green-200 text-green-900 px-3 py-1 rounded-full font-medium text-sm hover:bg-green-400 hover:scale-110 transition"
+      class="flex items-center gap-2 bg-green-200 text-green-900 px-3 py-1 rounded-full font-medium text-sm hover:bg-green-400 hover:scale-110 transition dark:bg-green-700 dark:text-green-200 dark:hover:bg-green-600"
       href="#"
     >
       <BriefCaseIcon class="size-6" />
       Disponible para trabajar</a
     >
     <h1 class="text-7xl font-black gradient-text">Orlando López</h1>
-    <h3 class="text-4xl font-semibold text-gray-800">
+    <h3 class="text-4xl font-semibold text-gray-800 dark:text-white">
       Desarrollador Front-End
     </h3>
-    <h4 class="text-xl text-gray-700">Ingeniero en Informática en formación</h4>
-    <p class="text-xl text-gray-500 max-w-160">
+    <h4 class="text-xl text-gray-700 dark:text-gray-100">
+      Ingeniero en Informática en formación
+    </h4>
+    <p class="text-xl text-gray-500 max-w-160 dark:text-gray-300">
       <strong class="text-blue-500"> +2 años</strong> de experiencia autodidacta
       creando experiencias web modernas e intuitivas
     </p>
@@ -53,4 +55,4 @@ import SocialMedia from './SocialMedia.astro';
       alt="Fotografia de Orlando López"
     />
   </aside>
-</section>
+</SectionContainer>
