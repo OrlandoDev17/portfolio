@@ -1,0 +1,17 @@
+---
+import { SOCIAL_LINKS } from '../consts/Consts';
+---
+
+<ul class="flex gap-4">
+  {
+    SOCIAL_LINKS.map(({ icon: Icon, href, color }) => (
+      <li
+        class={`p-2 rounded-md ${color} hover:brightness-125 hover:scale-110 transition`}
+      >
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          <Icon className="size-7 text-white" />
+        </a>
+      </li>
+    ))
+  }
+</ul>

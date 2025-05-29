@@ -1,0 +1,22 @@
+---
+import { NAV_ITEMS } from '../consts/Consts';
+import ToogleTheme from './ThemeToggle.astro';
+---
+
+<header
+  class="fixed w-full top-0 flex items-center justify-between py-4 px-48 border-b-2 border-zinc-600/10 z-10 backdrop-blur-2xl bg-white dark:bg-zinc-800 dark:text-white"
+>
+  <img src="./logo.svg" alt="Logo de Orlando López" class="size-16" />
+  <nav>
+    <ul class="flex items-center justify-center gap-8">
+      {
+        NAV_ITEMS.map(({ title, href }) => (
+          <li class="text-xl font-medium hover:text-blue-500 hover:scale-110 transition">
+            <a href={href}>{title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+  <ToogleTheme />
+</header>

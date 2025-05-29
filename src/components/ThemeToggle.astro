@@ -1,0 +1,54 @@
+---
+import SunIcon from '../icons/Sun.astro';
+import MoonIcon from '../icons/Moon.astro';
+---
+
+<button id="toggle-theme" class="ml-1">
+  <!-- Icono para el modo claro -->
+  <SunIcon
+    id="sun"
+    class="size-5 md:size-12 text-white hidden p-2 rounded-md cursor-pointer hover:bg-gray-900"
+  />
+  <!-- Icono para el modo oscuro -->
+  <MoonIcon
+    id="moon"
+    class="size-5 md:size-12 text-primary p-2 rounded-md cursor-pointer hover:bg-gray-200"
+  />
+</button>
+
+<script>
+  const toggleTheme = document.getElementById('toggle-theme');
+  const sun = document.getElementById('sun');
+  const moon = document.getElementById('moon');
+
+  // Funcion para actualizar los iconos segun el tema
+  function updateIcons() {
+    if (document.documentElement.classList.contains('dark')) {
+      sun?.classList.remove('hidden');
+      moon?.classList.add('hidden');
+    } else {
+      sun?.classList.add('hidden');
+      moon?.classList.remove('hidden');
+    }
+  }
+
+  // Alternar el tema al hacer click en el boton
+  toggleTheme?.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+    localStorage.setItem(
+      'theme',
+      document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+    );
+    updateIcons();
+  });
+
+  // Aplicar el tema guardado en localStorage al cargar la pagina
+  const savedTheme = localStorage.getItem('theme');
+  if (
+    savedTheme === 'dark' ||
+    (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)
+  ) {
+    document.documentElement.classList.add('dark');
+  }
+  updateIcons();
+</script>
