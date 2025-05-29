@@ -1,17 +1,40 @@
 ---
+import ProjectCard from '../components/ProjectCard.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import BriefCaseIcon from '../icons/BriefCase.astro';
+import MessageIcon from '../icons/Message.astro';
 ---
 
-<SectionContainer id="projects" className="bg-gray-100 mt-36">
+<SectionContainer
+  id="projects"
+  className="bg-gray-100  gap-12 dark:bg-slate-900 dark:text-white"
+>
   <div class="flex flex-col items-center justify-center gap-4">
     <h2 class="flex items-center gap-2 text-4xl font-semibold">
       <BriefCaseIcon class="text-blue-500 size-12" />
       Proyectos Personales
     </h2>
-    <p class="max-w-3xl text-center text-lg text-gray-700">
+    <p class="max-w-3xl text-center text-lg text-gray-700 dark:text-gray-300">
       Una selección de mis trabajos más recientes donde aplico las últimas
       tecnologías y mejores prácticas de desarrollo
     </p>
   </div>
+  <dir>
+    <ProjectCard />
+  </dir>
+  <aside class="flex flex-col items-center justify-center gap-4">
+    <p class="text-gray-600 text-lg">
+      ¿Quieres ver más proyectos o colaborar en algo nuevo?
+    </p>
+    <a
+      class="flex items-center gap-2 bg-gradient-to-r from-blue-500 via-violet-600 to-violet-700 px-3 py-2 rounded-lg
+    text-white font-medium hover:brightness-125 hover:scale-110 transition"
+      href="https://wa.me/+584242860846"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <MessageIcon />
+      Hablemos de tu proyecto</a
+    >
+  </aside>
 </SectionContainer>
