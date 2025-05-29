@@ -1,47 +1,106 @@
-# Astro Starter Kit: Minimal
+# Portfolio de Orlando López 🚀
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
+¡Bienvenido a mi portfolio personal!  
+Aquí encontrarás información sobre mí, mis proyectos, stack tecnológico y formas de contacto.  
+Este sitio está construido con **Astro** y **TailwindCSS**, enfocado en el rendimiento, la accesibilidad y el diseño moderno.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## ✨ Características
 
-## 🚀 Project Structure
+- **Diseño moderno y responsivo**
+- **Modo claro/oscuro** con cambio instantáneo
+- **Animaciones suaves** y gradientes atractivos
+- **Sección de proyectos destacados**
+- **Stack tecnológico** actualizado
+- **CV descargable**
+- **Enlaces a redes sociales y contacto directo**
 
-Inside of your Astro project, you'll see the following folders and files:
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- [Astro](https://astro.build/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [@fontsource-variable/montserrat](https://fontsource.org/fonts/montserrat)
+- [Iconos SVG personalizados](./src/icons/)
+
+---
+
+## 📦 Estructura del proyecto
 
 ```text
 /
-├── public/
+├── public/           # Imágenes, CV y recursos estáticos
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/   # Componentes reutilizables (Header, Hero, etc.)
+│   ├── icons/        # Iconos SVG en formato Astro
+│   ├── layout/       # Layout principal
+│   ├── pages/        # Páginas del sitio
+│   ├── styles/       # Estilos globales (Tailwind + personalizados)
+│   └── consts/       # Constantes y datos de navegación/redes
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🚀 Instalación y uso local
 
-Any static assets, like images, can be placed in the `public/` directory.
+1. **Clona el repositorio:**
 
-## 🧞 Commands
+   ```sh
+   git clone https://github.com/OrlandoDev17/portfolio.git
+   cd portfolio
+   ```
 
-All commands are run from the root of the project, from a terminal:
+2. **Instala las dependencias:**
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+   ```sh
+   pnpm install
+   ```
 
-## 👀 Want to learn more?
+3. **Inicia el servidor de desarrollo:**
+   ```sh
+   pnpm dev
+   ```
+   El sitio estará disponible en [http://localhost:4321](http://localhost:4321)
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+## 📄 Scripts útiles
+
+| Comando          | Acción                             |
+| ---------------- | ---------------------------------- |
+| `pnpm dev`       | Inicia el servidor de desarrollo   |
+| `pnpm build`     | Genera la versión de producción    |
+| `pnpm preview`   | Previsualiza el sitio ya compilado |
+| `pnpm astro ...` | Ejecuta comandos de Astro CLI      |
+
+---
+
+## 👨‍💻 Sobre mí
+
+Soy **Orlando López**, desarrollador front-end con más de 2 años de experiencia autodidacta, apasionado por crear experiencias web modernas, accesibles y de alto rendimiento.
+
+- [LinkedIn](https://www.linkedin.com/in/orlando-lópez1707)
+- [GitHub](https://github.com/OrlandoDev17)
+- [Telegram](https://t.me/OrlandoDev17)
+- [WhatsApp](https://wa.me/+584242860846)
+- [Email](mailto:orlandodev1707@gmail.com)
+
+---
+
+## 📬 Contacto
+
+¿Te gustaría trabajar conmigo o tienes alguna consulta?  
+¡No dudes en [contactarme](https://wa.me/+584242860846) o descargar mi [CV](./public/assets/CV.pdf)!
+
+---
+
+## 📝 Licencia
+
+Este proyecto es de código abierto y puedes usarlo como referencia para tus propios portfolios.  
+¡Si te resulta útil, no olvides dejar una estrella en GitHub!
+
+---
