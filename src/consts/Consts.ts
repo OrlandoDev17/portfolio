@@ -28,6 +28,8 @@ import TestingIcon from '../icons/Testing.astro';
 import VsCodeIcon from '../icons/VsCode.astro';
 import WebIcon from '../icons/Web.astro';
 import ToolsIcon from '../icons/Tools.astro';
+import ClerkIcon from '../icons/Clerk.astro';
+import GitHubBrandIcon from '../icons/GitHubBrand.astro';
 
 export const NAV_ITEMS: NavItem[] = [
   {
@@ -186,6 +188,14 @@ export const TAGS = {
     icon: WebIcon,
     color: 'bg-indigo-500',
   },
+  CLERK: {
+    name: 'Clerk',
+    icon: ClerkIcon,
+  },
+  GITHUB: {
+    name: 'GitHub',
+    icon: GitHubBrandIcon,
+  },
 };
 
 export const PROJECTS: Project[] = [
@@ -233,7 +243,14 @@ export const STACK_CONTAINER: StackItem[] = [
       TAGS.HTML,
       TAGS.CSS,
     ],
-    color: 'blue',
+    bgColor: 'bg-blue-200',
+    borderColor: 'border-blue-500',
+    textColor: 'text-blue-500',
+    itemBgColor: 'bg-blue-100/50',
+    darkBgColor: 'dark:bg-blue-700',
+    darkBorderColor: 'dark:border-blue-700',
+    darkTextColor: 'dark:text-blue-200',
+    darkItemBgColor: 'dark:bg-blue-700/20',
   },
   {
     title: 'Herramientas',
@@ -245,13 +262,29 @@ export const STACK_CONTAINER: StackItem[] = [
       TAGS.ILLUSTRATOR,
       TAGS.PNPM,
       TAGS.SUPABASE,
+      TAGS.CLERK,
+      TAGS.GITHUB,
     ],
-    color: 'violet',
+    bgColor: 'bg-violet-200',
+    borderColor: 'border-violet-500',
+    textColor: 'text-violet-500',
+    itemBgColor: 'bg-violet-100/50',
+    darkBgColor: 'dark:bg-violet-700',
+    darkBorderColor: 'dark:border-violet-700',
+    darkTextColor: 'dark:text-violet-200',
+    darkItemBgColor: 'dark:bg-violet-700/20',
   },
   {
     title: 'Otros',
     icon: WebIcon,
     items: [TAGS.MOBILE, TAGS.TESTING, TAGS.COMPASS, TAGS.WEB],
-    color: 'orange',
+    bgColor: 'bg-orange-200',
+    borderColor: 'border-orange-500',
+    textColor: 'text-orange-500',
+    itemBgColor: 'bg-orange-100/50',
+    darkBgColor: 'dark:bg-orange-700',
+    darkBorderColor: 'dark:border-orange-700',
+    darkTextColor: 'dark:text-orange-200',
+    darkItemBgColor: 'dark:bg-orange-700/20',
   },
 ] as const;

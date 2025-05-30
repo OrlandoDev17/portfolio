@@ -26,5 +26,12 @@ export interface StackItem {
   title: string;
   icon: any;
   items: any[];
-  color: string;
+  bgColor?: string;
+  borderColor?: string;
+  textColor?: string;
+  itemBgColor?: string;
+  darkBgColor?: string;
+  darkBorderColor?: string;
+  darkTextColor?: string;
+  darkItemBgColor?: string;
 }
