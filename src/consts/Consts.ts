@@ -1,5 +1,5 @@
 // Tipos
-import type { NavItem, SocialLink, Project } from '../types/Types';
+import type { NavItem, SocialLink, Project, StackItem } from '../types/Types';
 
 // Iconos
 import MailIcon from '../icons/Mail.astro';
@@ -14,6 +14,20 @@ import TailwindIcon from '../icons/Tailwind.astro';
 import SupabaseIcon from '../icons/Supabase.astro';
 import GitIcon from '../icons/Git.astro';
 import ReactIcon from '../icons/React.astro';
+import ScreenIcon from '../icons/Screen.astro';
+import JavaScriptIcon from '../icons/JavaScript.astro';
+import CodeIcon from '../icons/Code.astro';
+import CompassIcon from '../icons/Compass.astro';
+import HTMLIcon from '../icons/HTML.astro';
+import CSSIcon from '../icons/CSS.astro';
+import FigmaIcon from '../icons/Figma.astro';
+import IllustratorIcon from '../icons/Illustrator.astro';
+import MobileIcon from '../icons/Mobile.astro';
+import PnpmIcon from '../icons/Pnpm.astro';
+import TestingIcon from '../icons/Testing.astro';
+import VsCodeIcon from '../icons/VsCode.astro';
+import WebIcon from '../icons/Web.astro';
+import ToolsIcon from '../icons/Tools.astro';
 
 export const NAV_ITEMS: NavItem[] = [
   {
@@ -107,6 +121,71 @@ export const TAGS = {
     icon: ReactIcon,
     color: 'bg-blue-600',
   },
+  JAVASCRIPT: {
+    name: 'JavaScript',
+    icon: JavaScriptIcon,
+    color: 'bg-yellow-500',
+  },
+  CODE: {
+    name: 'Code',
+    icon: CodeIcon,
+    color: 'bg-gray-800',
+  },
+  SCREEN: {
+    name: 'Frontend',
+    icon: ScreenIcon,
+    color: 'bg-blue-400',
+  },
+  COMPASS: {
+    name: 'SEO',
+    icon: CompassIcon,
+    color: 'bg-pink-500',
+  },
+  HTML: {
+    name: 'HTML5',
+    icon: HTMLIcon,
+    color: 'bg-orange-600',
+  },
+  CSS: {
+    name: 'CSS3',
+    icon: CSSIcon,
+    color: 'bg-blue-600',
+  },
+  FIGMA: {
+    name: 'Figma',
+    icon: FigmaIcon,
+    color: 'bg-pink-400',
+  },
+  ILLUSTRATOR: {
+    name: 'Illustrator',
+    icon: IllustratorIcon,
+    color: 'bg-orange-400',
+  },
+  MOBILE: {
+    name: 'Responsive Design',
+    icon: MobileIcon,
+    color: 'bg-green-400',
+  },
+  PNPM: {
+    name: 'Pnpm',
+    icon: PnpmIcon,
+    color: 'bg-yellow-600',
+  },
+  TESTING: {
+    name: 'Testing',
+    icon: TestingIcon,
+    color: 'bg-red-400',
+  },
+  VSCODE: {
+    name: 'VS Code',
+    icon: VsCodeIcon,
+    color: 'bg-blue-700',
+  },
+  WEB: {
+    name: 'Deployment',
+    icon: WebIcon,
+    color: 'bg-indigo-500',
+  },
 };
 
 export const PROJECTS: Project[] = [
@@ -139,3 +218,40 @@ export const PROJECTS: Project[] = [
     tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.GIT],
   },
 ];
+
+export const STACK_CONTAINER: StackItem[] = [
+  {
+    title: 'Frontend',
+    icon: ScreenIcon,
+    items: [
+      TAGS.NEXT,
+      TAGS.ASTRO,
+      TAGS.REACT,
+      TAGS.TYPESCRIPT,
+      TAGS.TAILWIND,
+      TAGS.JAVASCRIPT,
+      TAGS.HTML,
+      TAGS.CSS,
+    ],
+    color: 'blue',
+  },
+  {
+    title: 'Herramientas',
+    icon: ToolsIcon,
+    items: [
+      TAGS.GIT,
+      TAGS.VSCODE,
+      TAGS.FIGMA,
+      TAGS.ILLUSTRATOR,
+      TAGS.PNPM,
+      TAGS.SUPABASE,
+    ],
+    color: 'violet',
+  },
+  {
+    title: 'Otros',
+    icon: WebIcon,
+    items: [TAGS.MOBILE, TAGS.TESTING, TAGS.COMPASS, TAGS.WEB],
+    color: 'orange',
+  },
+] as const;

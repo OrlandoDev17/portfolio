@@ -1,0 +1,24 @@
+---
+import { STACK_CONTAINER } from '../consts/Consts';
+---
+
+<div class="grid grid-cols-2 gap-12 mt-12">
+  {
+    STACK_CONTAINER.map(({ icon: Icon, title, items, color }) => (
+      <article class={`border-4 border-${color}-500 p-6 rounded-2xl`}>
+        <div class="flex items-center gap-4">
+          <Icon class={`bg-${color}-300 size-10`} />
+          <h3 class={`text-${color}`}>{title}</h3>
+        </div>
+        <div class="grid grid-cols-3 place-items-center gap-y-6 gap-x-2">
+          {items.map(({ icon: Icon, name }) => (
+            <span class="flex flex-col justify-center items-center">
+              <Icon class="size-12" />
+              <h4>{name}</h4>
+            </span>
+          ))}
+        </div>
+      </article>
+    ))
+  }
+</div>

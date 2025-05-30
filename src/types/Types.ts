@@ -21,3 +21,10 @@ export interface Project {
   }[]; // Cambiado a array
   tags?: { icon: any; color?: string; name?: string }[];
 }
+
+export interface StackItem {
+  title: string;
+  icon: any;
+  items: any[];
+  color: string;
+}

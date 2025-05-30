@@ -1,10 +1,19 @@
 ---
-const { className, id } = Astro.props;
+const { className, id, icon: Icon, title, paragraph } = Astro.props;
 ---
 
 <section
   id={id}
   class={`flex flex-col items-center justify-center px-64 py-10 ${className}`}
 >
+  <div class="flex flex-col items-center justify-center gap-4">
+    <h2 class="flex items-center gap-2 text-4xl font-semibold">
+      {Icon && <Icon class="text-blue-500 size-12" />}
+      {title}
+    </h2>
+    <p class="max-w-3xl text-center text-lg text-gray-700 dark:text-gray-300">
+      {paragraph}
+    </p>
+  </div>
   <slot />
 </section>
