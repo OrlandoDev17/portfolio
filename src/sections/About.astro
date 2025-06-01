@@ -1,5 +1,6 @@
 ---
 import MeCard from '../components/MeCard.astro';
+import MeContent from '../components/MeContent.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import UserIcon from '../icons/User.astro';
 ---
@@ -9,6 +10,10 @@ import UserIcon from '../icons/User.astro';
   title="Sobre Mí"
   icon={UserIcon}
   paragraph="Conoce más sobre mi trayectoria, pasiones y enfoque personal"
+  className="dark:bg-slate-900 dark:text-white"
 >
-  <MeCard />
+  <main class="flex items-start gap-12 mt-8">
+    <MeCard />
+    <MeContent />
+  </main>
 </SectionContainer>

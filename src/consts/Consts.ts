@@ -1,5 +1,12 @@
 // Tipos
-import type { NavItem, SocialLink, Project, StackItem } from '../types/Types';
+import type {
+  NavItem,
+  SocialLink,
+  Project,
+  StackItem,
+  Hobbie,
+  About,
+} from '../types/Types';
 
 // Iconos
 import MailIcon from '../icons/Mail.astro';
@@ -30,6 +37,13 @@ import WebIcon from '../icons/Web.astro';
 import ToolsIcon from '../icons/Tools.astro';
 import ClerkIcon from '../icons/Clerk.astro';
 import GitHubBrandIcon from '../icons/GitHubBrand.astro';
+import BookIcon from '../icons/Book.astro';
+import GamepadIcon from '../icons/Gamepad.astro';
+import AwardIcon from '../icons/Award.astro';
+import ClockIcon from '../icons/Clock.astro';
+import HeartIcon from '../icons/Heart.astro';
+import IdeaIcon from '../icons/Idea.astro';
+import TeamIcon from '../icons/Team.astro';
 
 export const NAV_ITEMS: NavItem[] = [
   {
@@ -60,18 +74,30 @@ export const SOCIAL_LINKS: SocialLink[] = [
     href: 'mailto:orlandodev1707@gmail.com',
     icon: MailIcon,
     color: 'bg-yellow-500',
+    borderColor: 'border-yellow-300',
+    placeholder: 'orlandodev1707@gmail.com',
+    textColor: 'text-yellow-500',
+    hoverColor: 'hover:bg-yellow-300/30',
   },
   {
     id: 'github',
     href: 'https://github.com/OrlandoDev17',
     icon: GitHubIcon,
     color: 'bg-gray-700',
+    borderColor: 'border-gray-300',
+    placeholder: 'GitHub',
+    textColor: 'text-gray-500',
+    hoverColor: 'hover:bg-gray-300/30',
   },
   {
     id: 'linkedin',
     href: 'https://www.linkedin.com/in/orlando-lópez1707',
     icon: LinkedInIcon,
     color: 'bg-blue-600',
+    borderColor: 'border-blue-300',
+    placeholder: 'LinkedIn',
+    textColor: 'text-blue-500',
+    hoverColor: 'hover:bg-blue-300/30',
   },
   {
     id: 'whatsapp',
@@ -286,5 +312,62 @@ export const STACK_CONTAINER: StackItem[] = [
     darkBorderColor: 'dark:border-orange-700',
     darkTextColor: 'dark:text-orange-200',
     darkItemBgColor: 'dark:bg-orange-700/20',
+  },
+] as const;
+
+export const HOBBIES: Hobbie[] = [
+  {
+    hobbie: 'Aprendizaje Continuo y autodidacta',
+    icon: BookIcon,
+    color: 'text-yellow-500',
+  },
+  {
+    hobbie: 'Amante de los videojuegos y el desarrollo web',
+    icon: GamepadIcon,
+    color: 'text-blue-500',
+  },
+  {
+    hobbie: 'Apasionado al código limpio y buenas practicas',
+    icon: WebIcon,
+    color: 'text-green-500',
+  },
+];
+
+export const ABOUT_INFO: About[] = [
+  {
+    title: 'Pasión por el desarrollo',
+    text: 'Apasionado por crear experiencias digitales excepcionales y resolver problemas complejos con soluciones elegantes',
+    icon: HeartIcon,
+    color: 'text-red-500',
+  },
+  {
+    title: 'Aprendizaje Continuo',
+    text: 'Constantemente explorando nuevas tecnologías y mejores prácticas para mantenerme actualizado en un campo en constante evolución',
+    icon: BookIcon,
+    color: 'text-blue-500',
+  },
+  {
+    title: 'Experiencia Autodidacta',
+    text: 'Más de 2 años de experiencia autodidacta desarrollando proyectos personales y colaborativos que me han permitido crecer profesionalmente',
+    icon: ClockIcon,
+    color: 'text-green-500',
+  },
+  {
+    title: 'Enfoque en Resultados',
+    text: 'Comprometido con entregar productos de alta calidad, optimizados y con excelente experiencia de usuario',
+    icon: AwardIcon,
+    color: 'text-yellow-500',
+  },
+  {
+    title: 'Resolución de Problemas',
+    text: 'Habilidad para analizar problemas complejos y encontrar soluciones creativas y eficientes',
+    icon: IdeaIcon,
+    color: 'text-orange-500',
+  },
+  {
+    title: 'Trabajo en Equipo',
+    text: 'Experiencia colaborando en equipos multidisciplinarios, aportando ideas y aprendiendo de otros profesionales',
+    icon: IdeaIcon,
+    color: 'text-violet-500',
   },
 ] as const;

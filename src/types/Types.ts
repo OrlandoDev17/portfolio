@@ -8,6 +8,10 @@ export interface SocialLink {
   href: string;
   icon: any;
   color: string;
+  borderColor?: string;
+  placeholder?: string;
+  textColor?: string;
+  hoverColor?: string;
 }
 
 export interface Project {
@@ -34,4 +38,17 @@ export interface StackItem {
   darkBorderColor?: string;
   darkTextColor?: string;
   darkItemBgColor?: string;
+}
+
+export interface Hobbie {
+  hobbie: string;
+  icon: any;
+  color: string;
+}
+
+export interface About {
+  title: string;
+  text: string;
+  icon: any;
+  color: string;
 }

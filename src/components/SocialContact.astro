@@ -1,0 +1,31 @@
+---
+import { SOCIAL_LINKS } from '../consts/Consts';
+---
+
+<ul class="flex flex-col gap-4">
+  {
+    SOCIAL_LINKS.slice(0, 3).map(
+      ({
+        href,
+        icon: Icon,
+        borderColor,
+        placeholder,
+        textColor,
+        hoverColor,
+      }) => (
+        <li>
+          <a
+            class={`flex items-center gap-4 border-2 ${borderColor} py-2 px-4 rounded-lg ${textColor} ${hoverColor} hover:text-black
+              dark:hover:text-white transition`}
+            href={href}
+            target="_blank"
+            rel="noopener norreferrer"
+          >
+            <Icon />
+            {placeholder}
+          </a>
+        </li>
+      )
+    )
+  }
+</ul>
