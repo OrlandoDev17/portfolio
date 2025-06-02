@@ -2,7 +2,7 @@
 import { STACK_CONTAINER } from '../consts/Consts';
 ---
 
-<div class="grid grid-cols-2 gap-12 mt-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 xl:gap-12 mt-12">
   {
     STACK_CONTAINER.map(
       ({
@@ -27,10 +27,10 @@ import { STACK_CONTAINER } from '../consts/Consts';
             />
             <h3 class={`${textColor} text-2xl font-semibold`}>{title}</h3>
           </div>
-          <div class="grid grid-cols-3 place-items-center gap-y-6 gap-x-2">
+          <div class="grid grid-cols-2 lg:grid-cols-3 place-items-center gap-y-6 gap-x-2">
             {items.map(({ icon: Icon, name }) => (
               <span
-                class={`flex flex-col justify-center items-center gap-2 ${itemBgColor} ${darkItemBgColor} w-42 h-28 p-2 text-center rounded-xl hover:saturate-200 transition`}
+                class={`flex flex-col justify-center items-center gap-2 ${itemBgColor} ${darkItemBgColor} w-38 h-32 p-2 text-center rounded-xl hover:saturate-200 transition`}
               >
                 <Icon
                   class={`size-13 ${textColor} ${darkTextColor} ${bgColor} ${darkBgColor} p-2 rounded-xl`}

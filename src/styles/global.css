@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+@theme {
+  --breakpoint-3xl: 110rem;
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @keyframes gradient-animation {
