@@ -1,0 +1,51 @@
+<div class={`animate-container ${Astro.props.class}`}>
+  <slot />
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const containers = document.querySelectorAll('.animate-container');
+
+    containers.forEach((container) => {
+      const animatedElements = Array.from(container.children).filter((el) =>
+        Array.from(el.classList).some((cls) => cls.startsWith('a-'))
+      );
+
+      if (animatedElements.length === 0) return;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const element = entry.target;
+
+            if (entry.isIntersecting) {
+              if ((element as HTMLElement).dataset.animated === 'true') return;
+
+              (element as HTMLElement).dataset.animated = 'true';
+
+              if (element.classList.contains('opacity-0')) {
+                element.classList.remove('opacity-0');
+              }
+
+              const animationClasses = Array.from(element.classList).filter(
+                (cls) => cls.startsWith('a-')
+              );
+
+              element.classList.remove(...animationClasses);
+              void (element as HTMLElement).offsetWidth;
+
+              element.classList.add(...animationClasses);
+            }
+          });
+        },
+        {
+          root: null,
+          rootMargin: '0px',
+          threshold: 1,
+        }
+      );
+
+      animatedElements.forEach((element) => observer.observe(element));
+    });
+  });
+</script>
