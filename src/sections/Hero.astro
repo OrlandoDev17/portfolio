@@ -11,7 +11,7 @@ import AnimateContainer from '../components/AnimateContainer.astro';
   class="flex flex-col md:flex-row justify-center items-center px-4 md:px-16 xl:px-32 2xl:px-64 py-10 relative top-23 gap-2 xl:gap-12 2xl:gap-26 dark:bg-zinc-800 mb-24"
 >
   <AnimateContainer>
-    <div class="a-fade-to-right flex flex-col items-start gap-4">
+    <div class="a-slide-in-left opacity-0 flex flex-col items-start gap-4">
       <a
         class="flex items-center gap-2 bg-green-200 text-green-900 px-3 py-1 rounded-full font-medium text-sm hover:bg-green-400 hover:scale-110 transition dark:bg-green-700 dark:text-green-200 dark:hover:bg-green-600"
         href="https://wa.me/+584242860846"
@@ -58,11 +58,13 @@ import AnimateContainer from '../components/AnimateContainer.astro';
       <SocialMedia />
     </div>
   </AnimateContainer>
-  <aside>
-    <img
-      class="size-84 lg:size-76 xl:size-84 object-cover rounded-full p-4 border-4 border-blue-500"
-      src="./assets/photo.png"
-      alt="Fotografia de Orlando López"
-    />
-  </aside>
+  <AnimateContainer>
+    <aside class="a-slide-in-right opacity-0">
+      <img
+        class="size-84 lg:size-76 xl:size-84 object-cover rounded-full p-4 border-4 border-blue-500"
+        src="./assets/photo.png"
+        alt="Fotografia de Orlando López"
+      />
+    </aside>
+  </AnimateContainer>
 </section>

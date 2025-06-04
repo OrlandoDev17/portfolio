@@ -1,45 +1,50 @@
 ---
 import { ABOUT_INFO } from '../consts/Consts';
 import DownloadIcon from '../icons/Download.astro';
+import AnimateContainer from './AnimateContainer.astro';
 ---
 
-<article
-  class="flex flex-col justify-center items-center gap-8 max-w-180 shadow-2xl p-8 rounded-xl dark:bg-slate-800"
->
-  <div class="flex flex-col gap-4">
-    <p class="text-balance">
-      Soy un desarrollador front-end apasionado por crear experiencias digitales
-      excepcionales. Actualmente estoy cursando Ingeniería en Informática, he
-      dedicado más de 2 años al aprendizaje autodidacta de tecnologías web
-      modernas.
-    </p>
-    <p class="text-balance">
-      Mi enfoque se centra en crear soluciones, escribir código limpio, crear
-      interfaces intuitivas y mantenerme actualizado con las últimas tendencias
-      del desarrollo web. Disfruto transformando ideas complejas en soluciones
-      simples y elegantes.
-    </p>
-  </div>
-  <ul class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    {
-      ABOUT_INFO.map(({ title, text, icon: Icon, color }) => (
-        <li class="flex flex-col gap-4 hover:shadow-xl p-4 rounded-xl transition dark:bg-slate-600/30">
-          <div class="flex gap-2 items-center">
-            <Icon class={`${color} size-7`} />
-            <h3 class="font-semibold text-lg">{title}</h3>
-          </div>
-          <p class="text-gray-600 text-sm dark:text-gray-300">{text}</p>
-        </li>
-      ))
-    }
-  </ul>
-  <a
-    class="flex items-center gap-4 bg-gradient-to-r from-blue-500 via-violet-600 to-violet-700 py-2 px-4 rounded-lg text-white
-    font-medium hover:brightness-125 hover:-translate-y-1 transition"
-    href="./assets/CV.pdf"
-    download
+<AnimateContainer threshold={0.7}>
+  <article
+    class="a-slide-in-right opacity-0 flex flex-col justify-center items-center gap-8 max-w-180 shadow-2xl p-8 rounded-xl dark:bg-slate-800"
   >
-    <DownloadIcon />
-    Descargar Curriculum
-  </a>
-</article>
+    <div class="flex flex-col gap-4">
+      <p class="text-balance">
+        Soy un desarrollador front-end apasionado por crear experiencias
+        digitales excepcionales. Actualmente estoy cursando Ingeniería en
+        Informática, he dedicado más de 2 años al aprendizaje autodidacta de
+        tecnologías web modernas.
+      </p>
+      <p class="text-balance">
+        Mi enfoque se centra en crear soluciones, escribir código limpio, crear
+        interfaces intuitivas y mantenerme actualizado con las últimas
+        tendencias del desarrollo web. Disfruto transformando ideas complejas en
+        soluciones simples y elegantes.
+      </p>
+    </div>
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {
+        ABOUT_INFO.map(({ title, text, icon: Icon, color }) => (
+          <AnimateContainer>
+            <li class="a-slide-in-bottom opacity-0 flex flex-col gap-4 hover:shadow-xl p-4 rounded-xl transition dark:bg-slate-600/30">
+              <div class="flex gap-2 items-center">
+                <Icon class={`${color} size-7`} />
+                <h3 class="font-semibold text-lg">{title}</h3>
+              </div>
+              <p class="text-gray-600 text-sm dark:text-gray-300">{text}</p>
+            </li>
+          </AnimateContainer>
+        ))
+      }
+    </ul>
+    <a
+      class="flex items-center gap-4 bg-gradient-to-r from-blue-500 via-violet-600 to-violet-700 py-2 px-4 rounded-lg text-white
+    font-medium hover:brightness-125 hover:-translate-y-1 transition"
+      href="./assets/CV.pdf"
+      download
+    >
+      <DownloadIcon />
+      Descargar Curriculum
+    </a>
+  </article>
+</AnimateContainer>

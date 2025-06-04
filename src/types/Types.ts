@@ -38,6 +38,7 @@ export interface StackItem {
   darkBorderColor?: string;
   darkTextColor?: string;
   darkItemBgColor?: string;
+  animation: string;
 }
 
 export interface Hobbie {

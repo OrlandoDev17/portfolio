@@ -1,4 +1,6 @@
 ---
+import AnimateContainer from './AnimateContainer.astro';
+
 const { className, id, icon: Icon, title, paragraph } = Astro.props;
 ---
 
@@ -6,14 +8,18 @@ const { className, id, icon: Icon, title, paragraph } = Astro.props;
   id={id}
   class={`flex flex-col items-center justify-center px-8 md:px-16 xl:px-32 2xl:px-64 py-10 ${className}`}
 >
-  <div class="flex flex-col items-center justify-center gap-4">
-    <h2 class="flex items-center gap-2 text-4xl font-semibold">
-      {Icon && <Icon class="text-blue-500 size-12" />}
-      {title}
-    </h2>
-    <p class="max-w-3xl text-center text-lg text-gray-700 dark:text-gray-300">
-      {paragraph}
-    </p>
-  </div>
+  <AnimateContainer>
+    <div
+      class="a-slide-in-bottom opacity-0 flex flex-col items-center justify-center gap-4"
+    >
+      <h2 class="flex items-center gap-2 text-4xl font-semibold">
+        {Icon && <Icon class="text-blue-500 size-12" />}
+        {title}
+      </h2>
+      <p class="max-w-3xl text-center text-lg text-gray-700 dark:text-gray-300">
+        {paragraph}
+      </p>
+    </div>
+  </AnimateContainer>
   <slot />
 </section>

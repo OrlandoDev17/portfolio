@@ -1,36 +1,41 @@
 ---
 import { HOBBIES } from '../consts/Consts';
+import AnimateContainer from './AnimateContainer.astro';
 ---
 
-<div
-  class="flex justify-center items-center bg-gradient-to-r from-blue-500 via-violet-600 to-violet-700 rounded-xl shadow-2xl p-1.5 mt-12"
->
-  <article
-    class="flex flex-col items-center justify-center gap-4 rounded-xl bg-white dark:bg-slate-800 h-full w-full px-6 py-8"
+<AnimateContainer>
+  <div
+    class="a-slide-in-left opacity-0 flex justify-center items-center bg-gradient-to-r from-blue-500 via-violet-600 to-violet-700 rounded-xl shadow-2xl p-1.5 mt-12"
   >
-    <div class="flex
+    <article
+      class="flex flex-col items-center justify-center gap-4 rounded-xl bg-white dark:bg-slate-800 h-full w-full px-6 py-8"
+    >
+      <div class="flex
     flex-col
     items-center
     justify-center
     gap-2">
-      <img
-        class="size-38 object-cover mb-2"
-        src="./images/user.webp"
-        alt="Foto #2 de Orlando López"
-      />
-      <h2 class="text-2xl font-semibold">Orlando López</h2>
-      <h3 class="text-xl text-blue-500 font-medium">Desarrollador Front-End</h3>
-    </div>
-    <hr class="w-full text-gray-200" />
-    <dir class="flex flex-col justify-center gap-4">
-      {
-        HOBBIES.map(({ icon: Icon, hobbie, color }) => (
-          <p class="flex items-center gap-2 font-medium text-sm">
-            <Icon class={`${color} size-7`} />
-            {hobbie}
-          </p>
-        ))
-      }
-    </dir>
-  </article>
-</div>
+        <img
+          class="size-38 object-cover mb-2"
+          src="./images/user.webp"
+          alt="Foto #2 de Orlando López"
+        />
+        <h2 class="text-2xl font-semibold">Orlando López</h2>
+        <h3 class="text-xl text-blue-500 font-medium">
+          Desarrollador Front-End
+        </h3>
+      </div>
+      <hr class="w-full text-gray-200" />
+      <dir class="flex flex-col justify-center gap-4">
+        {
+          HOBBIES.map(({ icon: Icon, hobbie, color }) => (
+            <p class="flex items-center gap-2 font-medium text-sm">
+              <Icon class={`${color} size-7`} />
+              {hobbie}
+            </p>
+          ))
+        }
+      </dir>
+    </article>
+  </div>
+</AnimateContainer>

@@ -277,6 +277,7 @@ export const STACK_CONTAINER: StackItem[] = [
     darkBorderColor: 'dark:border-blue-700',
     darkTextColor: 'dark:text-blue-200',
     darkItemBgColor: 'dark:bg-blue-700/20',
+    animation: 'a-slide-in-left',
   },
   {
     title: 'Herramientas',
@@ -299,6 +300,7 @@ export const STACK_CONTAINER: StackItem[] = [
     darkBorderColor: 'dark:border-violet-700',
     darkTextColor: 'dark:text-violet-200',
     darkItemBgColor: 'dark:bg-violet-700/20',
+    animation: 'a-slide-in-right',
   },
   {
     title: 'Otros',
@@ -312,6 +314,7 @@ export const STACK_CONTAINER: StackItem[] = [
     darkBorderColor: 'dark:border-orange-700',
     darkTextColor: 'dark:text-orange-200',
     darkItemBgColor: 'dark:bg-orange-700/20',
+    animation: 'a-slide-in-left',
   },
 ] as const;
 

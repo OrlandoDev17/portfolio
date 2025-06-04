@@ -1,51 +1,49 @@
-<div class={`animate-container ${Astro.props.class}`}>
+<div
+  class={`animate-container ${Astro.props.class ?? ''}`}
+  data-threshold={Astro.props.threshold ?? 1}
+>
   <slot />
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const containers = document.querySelectorAll('.animate-container');
+  const containers = document.querySelectorAll('.animate-container');
+  containers.forEach((container) => {
+    // Lee el threshold desde el atributo data-threshold
+    const threshold = Number(container.getAttribute('data-threshold')) || 1;
 
-    containers.forEach((container) => {
-      const animatedElements = Array.from(container.children).filter((el) =>
-        Array.from(el.classList).some((cls) => cls.startsWith('a-'))
-      );
+    const animatedElements = Array.from(container.children).filter((el) =>
+      Array.from(el.classList).some((cls) => cls.startsWith('a-'))
+    );
 
-      if (animatedElements.length === 0) return;
+    if (animatedElements.length === 0) return;
 
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            const element = entry.target;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const el = entry.target as HTMLElement;
 
-            if (entry.isIntersecting) {
-              if ((element as HTMLElement).dataset.animated === 'true') return;
-
-              (element as HTMLElement).dataset.animated = 'true';
-
-              if (element.classList.contains('opacity-0')) {
-                element.classList.remove('opacity-0');
-              }
-
-              const animationClasses = Array.from(element.classList).filter(
-                (cls) => cls.startsWith('a-')
-              );
-
-              element.classList.remove(...animationClasses);
-              void (element as HTMLElement).offsetWidth;
-
-              element.classList.add(...animationClasses);
+          if (entry.isIntersecting) {
+            if (el.dataset.animated === 'true') return;
+            el.dataset.animated = 'true';
+            if (el.classList.contains('opacity-0')) {
+              el.classList.remove('opacity-0');
             }
-          });
-        },
-        {
-          root: null,
-          rootMargin: '0px',
-          threshold: 1,
-        }
-      );
+            const animationClasses = Array.from(el.classList).filter((cls) =>
+              cls.startsWith('a-')
+            );
+            el.classList.remove(...animationClasses);
+            void el.offsetWidth;
+            el.classList.add(...animationClasses);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: threshold,
+      }
+    );
 
-      animatedElements.forEach((element) => observer.observe(element));
-    });
+    animatedElements.forEach((el) => observer.observe(el));
   });
 </script>

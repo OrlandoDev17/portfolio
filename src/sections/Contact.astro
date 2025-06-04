@@ -1,4 +1,5 @@
 ---
+import AnimateContainer from '../components/AnimateContainer.astro';
 import ContactContainer from '../components/ContactContainer.astro';
 import MailIcon from '../icons/Mail.astro';
 ---
@@ -7,15 +8,19 @@ import MailIcon from '../icons/Mail.astro';
   id="contact"
   class="flex flex-col justify-center items-center px-8 md:px-16 xl:px-32 2xl:px-64 py-1 gap-12 dark:bg-zinc-800 dark:text-white"
 >
-  <div class="flex flex-col items-center justify-center gap-4">
-    <h2 class="flex items-center gap-2 text-4xl font-semibold">
-      <MailIcon class="text-violet-500 size-12" />
-      Contacto
-    </h2>
-    <p class="max-w-3xl text-center text-lg text-gray-700 dark:text-gray-300">
-      ¿Tienes un proyecto en mente? ¡Hablemos y hagámoslo realidad!
-    </p>
-  </div>
+  <AnimateContainer>
+    <div
+      class="a-slide-in-bottom opacity-0 flex flex-col items-center justify-center gap-4"
+    >
+      <h2 class="flex items-center gap-2 text-4xl font-semibold">
+        <MailIcon class="text-violet-500 size-12" />
+        Contacto
+      </h2>
+      <p class="max-w-3xl text-center text-lg text-gray-700 dark:text-gray-300">
+        ¿Tienes un proyecto en mente? ¡Hablemos y hagámoslo realidad!
+      </p>
+    </div>
+  </AnimateContainer>
   <div>
     <ContactContainer />
   </div>

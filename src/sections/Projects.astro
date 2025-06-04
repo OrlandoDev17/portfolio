@@ -3,6 +3,7 @@ import ProjectCard from '../components/ProjectCard.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import BriefCaseIcon from '../icons/BriefCase.astro';
 import MessageIcon from '../icons/Message.astro';
+import AnimateContainer from '../components/AnimateContainer.astro';
 ---
 
 <SectionContainer
@@ -16,20 +17,24 @@ import MessageIcon from '../icons/Message.astro';
   <div>
     <ProjectCard />
   </div>
-  <aside class="flex flex-col items-center justify-center gap-4">
-    <p class="text-gray-600 text-lg">
-      ¿Quieres ver más proyectos o colaborar en algo nuevo?
-    </p>
-    <a
-      class="flex items-center gap-2 bg-gradient-to-r from-blue-500 via-violet-600
+  <AnimateContainer>
+    <aside
+      class="a-slide-in-bottom opacity-0 flex flex-col items-center justify-center gap-4"
+    >
+      <p class="text-gray-600 text-lg">
+        ¿Quieres ver más proyectos o colaborar en algo nuevo?
+      </p>
+      <a
+        class="flex items-center gap-2 bg-gradient-to-r from-blue-500 via-violet-600
     to-violet-700 px-3 py-2 rounded-lg text-white font-medium hover:brightness-125
     hover:scale-110 transition"
-      href="https://wa.me/+584242860846"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <MessageIcon />
-      Hablemos de tu proyecto
-    </a>
-  </aside>
+        href="https://wa.me/+584242860846"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <MessageIcon />
+        Hablemos de tu proyecto
+      </a>
+    </aside>
+  </AnimateContainer>
 </SectionContainer>

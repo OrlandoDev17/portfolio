@@ -2,57 +2,62 @@
 import { PROJECTS } from '../consts/Consts';
 import GitHubIcon from '../icons/GitHub.astro';
 import RocketIcon from '../icons/Rocket.astro';
+import AnimateContainer from './AnimateContainer.astro';
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-  {
-    PROJECTS.map(({ title, description, image, links, tags }) => (
-      <article class="flex flex-col gap-4 rounded-xl shadow-2xl dark:shadow-gray-600 dark:shadow-lg">
-        <picture>
-          <img class="rounded-t-xl " src={image} alt={title} />
-        </picture>
-        <div class="flex flex-col gap-4 px-8">
-          <h3 class="text-3xl font-semibold">{title}</h3>
-          <p class="text-pretty text-gray-600 text-sm dark:text-gray-200">
-            {description}
-          </p>
-          <div class="flex flex-col gap-4">
-            <h4 class="text-lg font-medium">Tecnologías Usadas:</h4>
-            <aside class="flex items-center gap-1 flex-wrap justify-center">
-              {tags?.map(({ icon: Icon, name }) => (
-                <span class="flex items-center gap-2 bg-gray-200 px-3 py-2 rounded-full text-sm dark:bg-gray-700">
-                  <Icon class="size-6" />
-                  {name}
-                </span>
+<AnimateContainer>
+  <div
+    class="a-scale-in-center opacity-0 grid grid-cols-1 md:grid-cols-2 gap-12"
+  >
+    {
+      PROJECTS.map(({ title, description, image, links, tags }) => (
+        <article class="flex flex-col gap-4 rounded-xl shadow-2xl dark:shadow-gray-600 dark:shadow-lg">
+          <picture>
+            <img class="rounded-t-xl " src={image} alt={title} />
+          </picture>
+          <div class="flex flex-col gap-4 px-8">
+            <h3 class="text-3xl font-semibold">{title}</h3>
+            <p class="text-pretty text-gray-600 text-sm dark:text-gray-200">
+              {description}
+            </p>
+            <div class="flex flex-col gap-4">
+              <h4 class="text-lg font-medium">Tecnologías Usadas:</h4>
+              <aside class="flex items-center gap-1 flex-wrap justify-center">
+                {tags?.map(({ icon: Icon, name }) => (
+                  <span class="flex items-center gap-2 bg-gray-200 px-3 py-2 rounded-full text-sm dark:bg-gray-700">
+                    <Icon class="size-6" />
+                    {name}
+                  </span>
+                ))}
+              </aside>
+            </div>
+            <div class="flex items-center justify-center gap-6 pt-2 pb-4">
+              {links?.map(({ demo, code }) => (
+                <>
+                  <a
+                    class="flex items-center gap-3 py-2 px-4 rounded-lg tracking-wide font-medium bg-gradient-to-r from-blue-500 via-violet-600 to-violet-700 text-white hover:brightness-125 hover:scale-110 transition"
+                    href={demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <RocketIcon />
+                    Ver Demo
+                  </a>
+                  <a
+                    class="flex items-center gap-3 py-2 px-4 rounded-lg tracking-wide font-medium border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white hover:scale-110 transition"
+                    href={code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <GitHubIcon />
+                    Código Fuente
+                  </a>
+                </>
               ))}
-            </aside>
+            </div>
           </div>
-          <div class="flex items-center justify-center gap-6 pt-2 pb-4">
-            {links?.map(({ demo, code }) => (
-              <>
-                <a
-                  class="flex items-center gap-3 py-2 px-4 rounded-lg tracking-wide font-medium bg-gradient-to-r from-blue-500 via-violet-600 to-violet-700 text-white hover:brightness-125 hover:scale-110 transition"
-                  href={demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <RocketIcon />
-                  Ver Demo
-                </a>
-                <a
-                  class="flex items-center gap-3 py-2 px-4 rounded-lg tracking-wide font-medium border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white hover:scale-110 transition"
-                  href={code}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <GitHubIcon />
-                  Código Fuente
-                </a>
-              </>
-            ))}
-          </div>
-        </div>
-      </article>
-    ))
-  }
-</div>
+        </article>
+      ))
+    }
+  </div>
+</AnimateContainer>
