@@ -1,25 +1,54 @@
 ---
+import ThemeToggle from './ThemeToggle.astro';
 import { NAV_ITEMS } from '../consts/Consts';
-import AnimateContainer from './AnimateContainer.astro';
-import ToogleTheme from './ThemeToggle.astro';
+import ResponsiveHeader from './ResponsiveHeader.astro';
 ---
 
-<AnimateContainer>
-  <header
-    class="a-slide-in-top fixed w-full top-0 flex items-center justify-between py-4 px-16 md:px-24 xl:px-48 border-b-2 border-zinc-600/10 z-10 backdrop-blur-2xl bg-white dark:bg-zinc-800 dark:text-white dark:border-zinc-100/60"
+<header
+  class="absolute md:fixed top-0 z-100 flex items-center justify-between md:justify-center w-screen mt-2"
+>
+  <nav
+    class="flex justify-between md:justify-center items-center w-full md:w-auto gap-8 py-2 px-10 font-medium text-xs md:text-xl bg-black-haze-100 dark:bg-zinc-800 text-primary
+    dark:text-white rounded-full backdrop-blur-2xl"
   >
-    <img src="./logo.svg" alt="Logo de Orlando López" class="size-16" />
-    <nav class="md:flex hidden">
-      <ul class="flex items-center justify-center gap-8">
-        {
-          NAV_ITEMS.map(({ title, href }) => (
-            <li class="text-xl font-medium hover:text-blue-500 hover:scale-110 transition">
-              <a href={href}>{title}</a>
-            </li>
-          ))
-        }
-      </ul>
-    </nav>
-    <ToogleTheme />
-  </header>
-</AnimateContainer>
+    <picture class="flex items-center gap-2 md:block">
+      <img src="./logo.svg" alt="Logo de Orlando López" class="size-12" />
+      <span class="text-xl gradient-text font-semibold md:hidden block"
+        >Portfolio Personal</span
+      >
+    </picture>
+    <ul class="hidden md:flex items-center">
+      {
+        NAV_ITEMS.map(({ title, href }) => (
+          <li>
+            <a
+              class={`relative block px-2 py-2 transition hover:text-blue-500 hover:scale-110`}
+              aria-label={title}
+              href={href}
+            >
+              {title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <div class="flex items-center gap-2">
+      <ThemeToggle />
+      <ResponsiveHeader />
+    </div>
+  </nav>
+
+  <style>
+    nav {
+      animation: nav-shadown 1s linear both;
+      animation-timeline: scroll();
+      animation-range: 0 300px;
+    }
+
+    @keyframes nav-shadown {
+      to {
+        box-shadow: 0 12px 25px -9px rgba(0, 0, 0, 0.5);
+      }
+    }
+  </style>
+</header>

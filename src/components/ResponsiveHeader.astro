@@ -1,0 +1,29 @@
+---
+import MenuIcon from '../icons/Menu.astro';
+import { NAV_ITEMS } from '../consts/Consts';
+---
+
+<label for="checkbox-input" class="menu-button block md:hidden">
+  <MenuIcon
+    class="size-12 dark:text-white p-2 rounded-md cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-900"
+  />
+</label>
+<input type="checkbox" id="checkbox-input" hidden />
+
+<article class="menu absolute inset-0 top-20 bg-blue-500 z-999">
+  <nav>
+    {NAV_ITEMS.map(({ title, href }) => <a href={href}>{title}</a>)}
+  </nav>
+</article>
+
+<style>
+  .menu {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .menu-button ~ input:checked ~ .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+</style>
