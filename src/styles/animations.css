@@ -114,3 +114,16 @@
     opacity: 1;
   }
 }
+
+.a-fade {
+  animation: fade 0.5s linear;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -2,11 +2,12 @@
 import { ABOUT_INFO } from '../consts/Consts';
 import DownloadIcon from '../icons/Download.astro';
 import AnimateContainer from './AnimateContainer.astro';
+import GradientButton from './GradientButton.astro';
 ---
 
 <AnimateContainer threshold={0.7}>
   <article
-    class="a-slide-in-right opacity-0 flex flex-col justify-center items-center gap-8 max-w-180 shadow-2xl p-8 rounded-xl dark:bg-slate-800"
+    class="a-slide-in-right opacity-0 flex flex-col justify-center items-center gap-8 max-w-180 shadow-lg shadow-gray-600 p-8 rounded-xl dark:bg-slate-800"
   >
     <div class="flex flex-col gap-4">
       <p class="text-balance">
@@ -37,14 +38,9 @@ import AnimateContainer from './AnimateContainer.astro';
         ))
       }
     </ul>
-    <a
-      class="flex items-center gap-4 bg-gradient-to-r from-blue-500 via-violet-600 to-violet-700 py-2 px-4 rounded-lg text-white
-    font-medium hover:brightness-125 hover:-translate-y-1 transition"
-      href="./assets/CV.pdf"
-      download
-    >
+    <GradientButton href="./assets/CV.pdf" download>
       <DownloadIcon />
       Descargar Curriculum
-    </a>
+    </GradientButton>
   </article>
 </AnimateContainer>

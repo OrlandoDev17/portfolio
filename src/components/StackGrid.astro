@@ -18,11 +18,13 @@ import AnimateContainer from './AnimateContainer.astro';
         darkBorderColor,
         darkTextColor,
         darkItemBgColor,
+        hoverColor,
         animation,
+        shadowColor,
       }) => (
         <AnimateContainer>
           <article
-            class={`${animation} opacity-0 flex flex-col gap-6 border-4 ${borderColor} ${darkBorderColor} p-6 rounded-2xl hover:scale-102 transition dark:bg-slate-900`}
+            class={`${animation} opacity-0 flex flex-col gap-6 border-4 ${borderColor} ${darkBorderColor} p-6 rounded-2xl hover:scale-102 transition dark:bg-slate-900 shadow-lg ${shadowColor} hover:shadow-xl`}
           >
             <div class="flex items-center gap-4">
               <Icon
@@ -33,7 +35,7 @@ import AnimateContainer from './AnimateContainer.astro';
             <div class="grid grid-cols-2 lg:grid-cols-3 place-items-center gap-y-6 gap-x-2">
               {items.map(({ icon: Icon, name }) => (
                 <span
-                  class={`flex flex-col justify-center items-center gap-2 ${itemBgColor} ${darkItemBgColor} w-38 h-32 p-2 text-center rounded-xl hover:saturate-200 transition`}
+                  class={`flex flex-col justify-center items-center gap-2 ${itemBgColor} ${darkItemBgColor} w-38 h-32 p-2 text-center rounded-xl ${hoverColor} transition`}
                 >
                   <Icon
                     class={`size-13 ${textColor} ${darkTextColor} ${bgColor} ${darkBgColor} p-2 rounded-xl`}

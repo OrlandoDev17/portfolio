@@ -28,3 +28,8 @@
   animation: gradient-animation 3s infinite linear;
   background-clip: text;
 }
+
+.gradient-animation {
+  animation: gradient-animation 3s infinite linear;
+  background-size: 200% 200%;
+}

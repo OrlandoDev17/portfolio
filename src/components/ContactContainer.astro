@@ -3,13 +3,15 @@ import SocialContact from './SocialContact.astro';
 import MessageIcon from '../icons/Message.astro';
 import DownloadIcon from '../icons/Download.astro';
 import AnimateContainer from './AnimateContainer.astro';
+import GradientButton from './GradientButton.astro';
+import BorderButton from './BorderButton.astro';
 ---
 
 <AnimateContainer>
   <article
-    class="a-slide-in-left opacity-0 flex flex-col md:flex-row items-start justify-center shadow-2xl p-8 mb-4 rounded-xl gap-12"
+    class="a-slide-in-left opacity-0 flex flex-col md:flex-row items-start justify-center shadow-lg shadow-gray-600 p-8 mb-4 rounded-xl gap-12"
   >
-    <div class="flex flex-col justify-center gap-4">
+    <div class="flex flex-col justify-center gap-6">
       <h3 class="text-2xl font-semibold">¡Conectemos!</h3>
       <p class="max-w-100 text-gray-600 text-pretty dark:text-gray-300">
         Estoy siempre abierto a nuevas oportunidades y colaboraciones. No dudes
@@ -19,28 +21,18 @@ import AnimateContainer from './AnimateContainer.astro';
     </div>
     <div class="flex flex-col justify-center gap-6">
       <h3 class="text-2xl font-semibold">¿Listo para trabajar juntos?</h3>
-      <a
-        class="flex items-center justify-center gap-4 bg-gradient-to-r from-blue-500 via-violet-600 to-violet-700 text-sm px-4 py-2 rounded-lg
-      text-white font-medium hover:brightness-125 hover:-translate-y-1 transition"
-        href="https://wa.me/+584242860846"
-        target="_blank"
-      >
+      <GradientButton href="https://wa.me/+584242860846">
         <MessageIcon />
         Enviar Mensaje por WhatsApp
-      </a>
+      </GradientButton>
       <hr class="w-full text-gray-200" />
       <span class="text-sm text-gray-400"
         >O descarga mi CV para más detalles</span
       >
-      <a
-        class="flex items-center justify-center gap-4 border-2 border-violet-700 px-4 py-2 rounded-lg text-violet-700 hover:bg-violet-200
-      dark:hover:bg-violet-600/40 dark:hover:text-white hover:-translate-y-1 transition"
-        href="./assets/CV.pdf"
-        download
-      >
+      <BorderButton class="justify-center" href="./assets/CV.pdf" download>
         <DownloadIcon />
         Descargar CV
-      </a>
+      </BorderButton>
     </div>
   </article>
 </AnimateContainer>
