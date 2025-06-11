@@ -1,0 +1,64 @@
+---
+import LinkedIn from '../icons/LinkedIn.astro';
+import MailIcon from '../icons/Mail.astro';
+import WhatsappIcon from '../icons/Whatsapp.astro';
+import AnimateContainer from './AnimateContainer.astro';
+import BorderButton from './BorderButton.astro';
+import GradientButton from './GradientButton.astro';
+---
+
+<AnimateContainer>
+  <div
+    class="a-slide-in-left opacity-0 flex justify-center items-center bg-gradient-to-r from-blue-500 via-violet-600 to-violet-700 rounded-xl p-1.5 mt-12 shadow-lg shadow-gray-600 hover:shadow-xl transition"
+  >
+    <article
+      class="flex flex-col items-center justify-center gap-6 rounded-xl bg-white dark:bg-slate-800 h-full w-full px-8 py-12"
+    >
+      <header class="flex flex-col items-center justify-center gap-6">
+        <h2 class="text-2xl font-bold">¿Listo para trabajar juntos?</h2>
+        <p
+          class="flex flex-col items-center text-gray-600 dark:text-gray-300 text-lg"
+        >
+          Estoy disponible para nuevos proyectos y colaboraciones. <span
+            >Contáctame y conversemos sobre tu idea.</span
+          >
+        </p>
+        <div
+          class="relative flex items-center gap-3 bg-green-100 px-4 py-3 rounded-full border-2 border-green-600/20"
+        >
+          <span class="flex bg-green-400 size-3 rounded-full animate-pulse"
+          ></span>
+          <h4 class="font-medium">Disponible para nuevos proyectos</h4>
+        </div>
+        <div class="flex flex-col justify-center gap-4">
+          <GradientButton href="https://wa.me/+584242860846">
+            <WhatsappIcon />
+            Enviar mensaje por Whatsapp
+          </GradientButton>
+          <span class="text-gray-400"
+            >Tiempo de respuesta promedio: 2-4 horas</span
+          >
+        </div>
+      </header>
+      <hr class="w-200 text-gray-300" />
+      <footer class="flex flex-col justify-center gap-4">
+        <span class="text-gray-500 dark:text-gray-200"
+          >¿Prefieres otro medio de contacto?</span
+        >
+        <div class="flex items-center gap-6">
+          <BorderButton href="mailto:orlandodev1707@gmail.com">
+            <MailIcon />
+            Email
+          </BorderButton>
+          <BorderButton
+            class="border-violet-700 text-violet-700 hover:bg-violet-700 dark:border-violet-500 dark:text-violet-300 dark:hover:bg-violet-500"
+            href="https://www.linkedin.com/in/orlando-lópez1707"
+          >
+            <LinkedIn />
+            LinkedIn
+          </BorderButton>
+        </div>
+      </footer>
+    </article>
+  </div>
+</AnimateContainer>
