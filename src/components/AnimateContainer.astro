@@ -1,15 +1,30 @@
+---
+const {
+  class: className = '',
+  threshold = 1,
+  thresholdMobile = 0.3,
+} = Astro.props;
+---
+
 <div
-  class={`animate-container ${Astro.props.class ?? ''}`}
-  data-threshold={Astro.props.threshold ?? 1}
+  class={`animate-container ${className}`}
+  data-threshold={threshold}
+  data-threshold-mobile={thresholdMobile}
 >
   <slot />
 </div>
 
 <script>
   const containers = document.querySelectorAll('.animate-container');
+
   containers.forEach((container) => {
-    // Lee el threshold desde el atributo data-threshold
-    const threshold = Number(container.getAttribute('data-threshold')) || 1;
+    const desktopThreshold =
+      Number(container.getAttribute('data-threshold')) || 1;
+    const mobileThreshold =
+      Number(container.getAttribute('data-threshold-mobile')) || 0.3;
+
+    const threshold =
+      window.innerWidth < 750 ? mobileThreshold : desktopThreshold;
 
     const animatedElements = Array.from(container.children).filter((el) =>
       Array.from(el.classList).some((cls) => cls.startsWith('a-'))
@@ -24,15 +39,19 @@
 
           if (entry.isIntersecting) {
             if (el.dataset.animated === 'true') return;
+
             el.dataset.animated = 'true';
+
             if (el.classList.contains('opacity-0')) {
               el.classList.remove('opacity-0');
             }
+
             const animationClasses = Array.from(el.classList).filter((cls) =>
               cls.startsWith('a-')
             );
+
             el.classList.remove(...animationClasses);
-            void el.offsetWidth;
+            void (el instanceof HTMLElement && el.offsetWidth); // Reflow para reiniciar animación
             el.classList.add(...animationClasses);
           }
         });
