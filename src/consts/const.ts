@@ -1,11 +1,18 @@
 // Tipos
-import type { NavbarItem, SocialItem } from './types';
+import type { NavbarItem, ProjectItem, SocialItem } from './types';
 // Iconos
 import {
+  AstroBrand,
+  GitBrand,
   GitHubBrand,
   GmailBrand,
   LinkedInBrand,
+  NextBrand,
+  ReactBrand,
+  SupabaseBrand,
+  TailwindBrand,
   TelegramBrand,
+  TypeScriptBrand,
   WhatsappBrand,
 } from '../components/Icons';
 
@@ -67,5 +74,63 @@ export const SOCIAL_MEDIAS: SocialItem[] = [
     url: 'https://t.me/OrlandoDev17',
     bgColor: 'bg-blue-600',
     hoverBgColor: 'hover:bg-blue-800',
+  },
+] as const;
+
+export const TAGS = {
+  NEXT: {
+    icon: NextBrand,
+    name: 'NextJs',
+  },
+  TAILWIND: {
+    icon: TailwindBrand,
+    name: 'TailwindCss',
+  },
+  TYPESCRIPT: {
+    icon: TypeScriptBrand,
+    name: 'TypeScript',
+  },
+  SUPABASE: {
+    icon: SupabaseBrand,
+    name: 'Supabase',
+  },
+  GIT: {
+    icon: GitBrand,
+    name: 'Git',
+  },
+  ASTRO: {
+    icon: AstroBrand,
+    name: 'Astro',
+  },
+  REACT: {
+    icon: ReactBrand,
+    name: 'React',
+  },
+};
+
+export const PROJECTS: ProjectItem[] = [
+  {
+    id: 'goalmind',
+    title: 'GoalMind',
+    description:
+      'GoalMind es una plataforma innovadora para el seguimiento de objetivos, impulsada por IA. Diseñada para ayudar a los usuarios a visualizar su progreso, establecer metas claras y optimizar su productividad con herramientas inteligentes.',
+    image: './images/goalmind.png',
+    links: {
+      demo: 'https://goalmind.vercel.app/',
+      code: 'https://github.com/OrlandoDev17/goalmind',
+    },
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.SUPABASE, TAGS.GIT],
+  },
+  {
+    id: 'sneakerstore',
+    title: 'SneakerStore',
+    description:
+      'SneakerStore es una tienda en línea especializada en la venta de zapatos. Desarrollada con Astro, React y Tailwind CSS, ofrece una experiencia de usuario moderna, rápida y responsiva para explorar y adquirir los últimos modelos de sneakers.',
+    image: './images/sneakerstore.png',
+    links: {
+      demo: 'https://sneaker-store-nu.vercel.app/',
+      code: 'https://github.com/OrlandoDev17/sneaker-store',
+    },
+    tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.GIT],
   },
 ] as const;
