@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/montserrat';
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant active (&:where(.active, .active *));
+
+@keyframes gradient-animation {
+  0% {
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #3b82f6, #7c3aed, #8b5cf6);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-animation 3s infinite linear;
+  background-clip: text;
+}
+
+.gradient-animation {
+  animation: gradient-animation 3s infinite linear;
+  background-size: 200% 200%;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: 'Montserrat Variable', sans-serif;
+}
+
+body {
+  @apply bg-gray-50 dark:bg-zinc-800;
+}
+
+.nav {
+  animation: nav-shadown 1s linear both;
+  animation-timeline: scroll();
+  animation-range: 0 300px;
+}
+
+@keyframes nav-shadown {
+  to {
+    box-shadow: 0 12px 25px -9px rgba(0, 0, 0, 0.8);
+  }
+}
