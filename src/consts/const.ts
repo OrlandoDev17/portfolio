@@ -1,19 +1,38 @@
 // Tipos
-import type { NavbarItem, ProjectItem, SocialItem } from './types';
+import type { NavbarItem, ProjectItem, SocialItem, StackItem } from './types';
 // Iconos
 import {
   AstroBrand,
+  ClerkBrand,
+  CompassIcon,
+  CSSBrand,
+  DataBaseIcon,
+  FigmaBrand,
   GitBrand,
   GitHubBrand,
   GmailBrand,
+  HTMLBrand,
+  IllustratorBrand,
+  JavaScriptBrand,
   LinkedInBrand,
+  MobileIcon,
+  MySqlBrand,
   NextBrand,
+  NodeBrand,
+  OutTerminal,
+  PnpmBrand,
   ReactBrand,
+  ScreenIcon,
   SupabaseBrand,
   TailwindBrand,
   TelegramBrand,
+  TerminalIcon,
   TypeScriptBrand,
+  VercelBrand,
+  VsCodeBrand,
+  WebIcon,
   WhatsappBrand,
+  WWWICon,
 } from '../components/Icons';
 
 export const NAVBAR_ITEMS: NavbarItem[] = [
@@ -98,6 +117,10 @@ export const TAGS = {
     icon: GitBrand,
     name: 'Git',
   },
+  GITHUB: {
+    icon: GitHubBrand,
+    name: 'GitHub',
+  },
   ASTRO: {
     icon: AstroBrand,
     name: 'Astro',
@@ -105,6 +128,78 @@ export const TAGS = {
   REACT: {
     icon: ReactBrand,
     name: 'React',
+  },
+  JAVASCRIPT: {
+    icon: JavaScriptBrand,
+    name: 'JavaScript',
+  },
+  VSCODE: {
+    icon: VsCodeBrand,
+    name: 'VS Code',
+  },
+  FIGMA: {
+    icon: FigmaBrand,
+    name: 'Figma',
+  },
+  ILLUSTRATOR: {
+    icon: IllustratorBrand,
+    name: 'Illustrator',
+  },
+  PNPM: {
+    icon: PnpmBrand,
+    name: 'Pnpm',
+  },
+  CLERK: {
+    icon: ClerkBrand,
+    name: 'Clerk',
+  },
+  NODEJS: {
+    icon: NodeBrand,
+    name: 'Node Js',
+  },
+  MYSQL: {
+    icon: MySqlBrand,
+    name: 'MySql',
+  },
+  VERCEL: {
+    icon: VercelBrand,
+    name: 'Vercel',
+  },
+  WWW: {
+    icon: WWWICon,
+    name: 'WWW',
+  },
+  OUTTERMINAL: {
+    icon: OutTerminal,
+    name: 'Terminal',
+  },
+  SCREEN: {
+    icon: ScreenIcon,
+    name: 'Screen',
+  },
+  MOBILE: {
+    icon: MobileIcon,
+    name: 'Responsive Design',
+  },
+  TERMINAL: {
+    icon: TerminalIcon,
+    name: 'Testing',
+  },
+  COMPASS: {
+    icon: CompassIcon,
+    name: 'SEO',
+  },
+  WEB: {
+    icon: WebIcon,
+    name: 'Deployment',
+  },
+  HTML: {
+    icon: HTMLBrand,
+    name: 'HTML5',
+  },
+  CSS: {
+    icon: CSSBrand,
+    name: 'CSS3',
   },
 };
 
@@ -132,5 +227,85 @@ export const PROJECTS: ProjectItem[] = [
       code: 'https://github.com/OrlandoDev17/sneaker-store',
     },
     tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.GIT],
+  },
+] as const;
+
+export const STACKS: StackItem[] = [
+  {
+    id: 'frontend',
+    title: 'FrontEnd',
+    icon: ScreenIcon,
+    tags: [
+      TAGS.NEXT,
+      TAGS.ASTRO,
+      TAGS.REACT,
+      TAGS.TYPESCRIPT,
+      TAGS.TAILWIND,
+      TAGS.JAVASCRIPT,
+      TAGS.HTML,
+      TAGS.CSS,
+    ],
+    textColor: 'text-blue-500',
+    bgColor: 'bg-blue-200',
+    borderColor: 'border-blue-500',
+    itemBgColor: 'bg-blue-200/50',
+    shadowColor: 'shadow-blue-500',
+    hoverColor: 'hover:bg-blue-700/40',
+    darkTextColor: 'dark:text-blue-200',
+    darkBgColor: 'dark:bg-blue-400/50',
+    darkItemBgColor: 'dark:bg-blue-700/20',
+  },
+  {
+    id: 'tools',
+    title: 'Herramientas',
+    icon: OutTerminal,
+    tags: [
+      TAGS.GIT,
+      TAGS.GITHUB,
+      TAGS.FIGMA,
+      TAGS.ILLUSTRATOR,
+      TAGS.VSCODE,
+      TAGS.VERCEL,
+      TAGS.PNPM,
+    ],
+    textColor: 'text-violet-500',
+    bgColor: 'bg-violet-200',
+    borderColor: 'border-violet-500',
+    itemBgColor: 'bg-violet-200/50',
+    shadowColor: 'shadow-violet-500',
+    hoverColor: 'hover:bg-violet-700/40',
+    darkTextColor: 'dark:text-violet-200',
+    darkBgColor: 'dark:bg-violet-400/50',
+    darkItemBgColor: 'dark:bg-violet-700/20',
+  },
+  {
+    id: 'backend',
+    title: 'Backend',
+    icon: DataBaseIcon,
+    tags: [TAGS.NODEJS, TAGS.SUPABASE, TAGS.CLERK, TAGS.MYSQL],
+    textColor: 'text-green-500',
+    bgColor: 'bg-green-200',
+    borderColor: 'border-green-500',
+    itemBgColor: 'bg-green-200/50',
+    shadowColor: 'shadow-green-500',
+    hoverColor: 'hover:bg-green-700/40',
+    darkTextColor: 'dark:text-green-200',
+    darkBgColor: 'dark:bg-green-400/50',
+    darkItemBgColor: 'dark:bg-green-700/20',
+  },
+  {
+    id: 'other',
+    title: 'Otros',
+    icon: WWWICon,
+    tags: [TAGS.MOBILE, TAGS.TERMINAL, TAGS.COMPASS, TAGS.WEB],
+    textColor: 'text-orange-500',
+    bgColor: 'bg-orange-200',
+    borderColor: 'border-orange-500',
+    itemBgColor: 'bg-orange-200/50',
+    shadowColor: 'shadow-orange-500',
+    hoverColor: 'hover:bg-orange-700/40',
+    darkTextColor: 'dark:text-orange-200',
+    darkBgColor: 'dark:bg-orange-400/50',
+    darkItemBgColor: 'dark:bg-orange-700/20',
   },
 ] as const;

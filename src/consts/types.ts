@@ -27,3 +27,23 @@ export interface ProjectItem {
     name?: string;
   }[];
 }
+
+export interface StackItem {
+  id: string;
+  title: string;
+  icon: ComponentType;
+  tags: {
+    icon: ComponentType;
+    name: string;
+  }[];
+  textColor: string;
+  bgColor: string;
+  borderColor: string;
+  itemBgColor: string;
+  shadowColor: string;
+  hoverColor: string;
+  darkTextColor: string;
+  darkBgColor: string;
+  darkItemBgColor: string;
+  darkHoverColor?: string;
+}
