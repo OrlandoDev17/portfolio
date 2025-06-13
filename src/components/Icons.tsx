@@ -511,3 +511,641 @@ export const CodeIcon = ({ className }: icon) => {
     </svg>
   );
 };
+
+export const JavaScriptBrand = ({ className }: icon) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="2500"
+      height="2500"
+      viewBox="0 0 1052 1052"
+      className={className}
+    >
+      <path fill="#f0db4f" d="M0 0h1052v1052H0z" />
+      <path
+        d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z"
+        fill="#323330"
+      />
+    </svg>
+  );
+};
+
+export const VsCodeBrand = ({ className }: icon) => {
+  return (
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 100 100"
+    >
+      <mask
+        id="a"
+        width="100"
+        height="100"
+        x="0"
+        y="0"
+        mask-type="alpha"
+        maskUnits="userSpaceOnUse"
+      >
+        <path
+          fill="#fff"
+          fill-rule="evenodd"
+          d="M70.912 99.317a6.223 6.223 0 0 0 4.96-.19l20.589-9.907A6.25 6.25 0 0 0 100 83.587V16.413a6.25 6.25 0 0 0-3.54-5.632L75.874.874a6.226 6.226 0 0 0-7.104 1.21L29.355 38.04 12.187 25.01a4.162 4.162 0 0 0-5.318.236l-5.506 5.009a4.168 4.168 0 0 0-.004 6.162L16.247 50 1.36 63.583a4.168 4.168 0 0 0 .004 6.162l5.506 5.01a4.162 4.162 0 0 0 5.318.236l17.168-13.032L68.77 97.917a6.217 6.217 0 0 0 2.143 1.4ZM75.015 27.3 45.11 50l29.906 22.701V27.3Z"
+          clip-rule="evenodd"
+        />
+      </mask>
+      <g mask="url(#a)">
+        <path
+          fill="#0065A9"
+          d="M96.461 10.796 75.857.876a6.23 6.23 0 0 0-7.107 1.207l-67.451 61.5a4.167 4.167 0 0 0 .004 6.162l5.51 5.009a4.167 4.167 0 0 0 5.32.236l81.228-61.62c2.725-2.067 6.639-.124 6.639 3.297v-.24a6.25 6.25 0 0 0-3.539-5.63Z"
+        />
+        <g filter="url(#b)">
+          <path
+            fill="#007ACC"
+            d="m96.461 89.204-20.604 9.92a6.229 6.229 0 0 1-7.107-1.207l-67.451-61.5a4.167 4.167 0 0 1 .004-6.162l5.51-5.009a4.167 4.167 0 0 1 5.32-.236l81.228 61.62c2.725 2.067 6.639.124 6.639-3.297v.24a6.25 6.25 0 0 1-3.539 5.63Z"
+          />
+        </g>
+        <g filter="url(#c)">
+          <path
+            fill="#1F9CF0"
+            d="M75.858 99.126a6.232 6.232 0 0 1-7.108-1.21c2.306 2.307 6.25.674 6.25-2.588V4.672c0-3.262-3.944-4.895-6.25-2.589a6.232 6.232 0 0 1 7.108-1.21l20.6 9.908A6.25 6.25 0 0 1 100 16.413v67.174a6.25 6.25 0 0 1-3.541 5.633l-20.601 9.906Z"
+          />
+        </g>
+        <path
+          fill="url(#d)"
+          fill-rule="evenodd"
+          d="M70.851 99.317a6.224 6.224 0 0 0 4.96-.19L96.4 89.22a6.25 6.25 0 0 0 3.54-5.633V16.413a6.25 6.25 0 0 0-3.54-5.632L75.812.874a6.226 6.226 0 0 0-7.104 1.21L29.294 38.04 12.126 25.01a4.162 4.162 0 0 0-5.317.236l-5.507 5.009a4.168 4.168 0 0 0-.004 6.162L16.186 50 1.298 63.583a4.168 4.168 0 0 0 .004 6.162l5.507 5.009a4.162 4.162 0 0 0 5.317.236L29.294 61.96l39.414 35.958a6.218 6.218 0 0 0 2.143 1.4ZM74.954 27.3 45.048 50l29.906 22.701V27.3Z"
+          clip-rule="evenodd"
+          opacity=".25"
+          style={{ mixBlendMode: 'overlay' }}
+        />
+      </g>
+      <defs>
+        <filter
+          id="b"
+          width="116.727"
+          height="92.246"
+          x="-8.394"
+          y="15.829"
+          color-interpolation-filters="sRGB"
+          filterUnits="userSpaceOnUse"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="4.167" />
+          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+          <feBlend
+            in2="BackgroundImageFix"
+            mode="overlay"
+            result="effect1_dropShadow"
+          />
+          <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+        <filter
+          id="c"
+          width="47.917"
+          height="116.151"
+          x="60.417"
+          y="-8.076"
+          color-interpolation-filters="sRGB"
+          filterUnits="userSpaceOnUse"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="4.167" />
+          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+          <feBlend
+            in2="BackgroundImageFix"
+            mode="overlay"
+            result="effect1_dropShadow"
+          />
+          <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+        <linearGradient
+          id="d"
+          x1="49.939"
+          x2="49.939"
+          y1=".258"
+          y2="99.742"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#fff" />
+          <stop offset="1" stop-color="#fff" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+
+export const FigmaBrand = ({ className }: icon) => {
+  return (
+    <svg
+      className={className}
+      width="54"
+      height="80"
+      viewBox="0 0 54 80"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_912_3)">
+        <path
+          d="M13.3333 80.0002C20.6933 80.0002 26.6667 74.0268 26.6667 66.6668V53.3335H13.3333C5.97333 53.3335 0 59.3068 0 66.6668C0 74.0268 5.97333 80.0002 13.3333 80.0002Z"
+          fill="#0ACF83"
+        />
+        <path
+          d="M0 39.9998C0 32.6398 5.97333 26.6665 13.3333 26.6665H26.6667V53.3332H13.3333C5.97333 53.3332 0 47.3598 0 39.9998Z"
+          fill="#A259FF"
+        />
+        <path
+          d="M0 13.3333C0 5.97333 5.97333 0 13.3333 0H26.6667V26.6667H13.3333C5.97333 26.6667 0 20.6933 0 13.3333Z"
+          fill="#F24E1E"
+        />
+        <path
+          d="M26.6667 0H40.0001C47.3601 0 53.3334 5.97333 53.3334 13.3333C53.3334 20.6933 47.3601 26.6667 40.0001 26.6667H26.6667V0Z"
+          fill="#FF7262"
+        />
+        <path
+          d="M53.3334 39.9998C53.3334 47.3598 47.3601 53.3332 40.0001 53.3332C32.6401 53.3332 26.6667 47.3598 26.6667 39.9998C26.6667 32.6398 32.6401 26.6665 40.0001 26.6665C47.3601 26.6665 53.3334 32.6398 53.3334 39.9998Z"
+          fill="#1ABCFE"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_912_3">
+          <rect width="53.3333" height="80" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+export const IllustratorBrand = ({ className }: icon) => {
+  return (
+    <svg
+      className={className}
+      width="83"
+      height="80"
+      viewBox="0 0 83 80"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_906_1865)">
+        <path
+          d="M67.5214 0H14.5299C6.50526 0 0 6.50526 0 14.5299V65.4701C0 73.4947 6.50526 80 14.5299 80H67.5214C75.546 80 82.0513 73.4947 82.0513 65.4701V14.5299C82.0513 6.50526 75.546 0 67.5214 0Z"
+          fill="#330000"
+        />
+        <path
+          d="M39.7607 48.0096H27.0459L24.4589 56.0459C24.4237 56.1924 24.3384 56.3221 24.2178 56.4125C24.0972 56.503 23.9489 56.5485 23.7984 56.5413H17.3584C16.9911 56.5413 16.8627 56.3395 16.9731 55.9358L27.9815 24.2312C28.0917 23.901 28.2018 23.5249 28.3119 23.1028C28.4559 22.3684 28.5296 21.622 28.5321 20.8736C28.5246 20.8213 28.5294 20.7679 28.5461 20.7178C28.5629 20.6676 28.591 20.6221 28.6284 20.5847C28.6658 20.5473 28.7114 20.5191 28.7615 20.5024C28.8117 20.4856 28.865 20.4808 28.9174 20.4883H37.669C37.9255 20.4883 38.0722 20.58 38.1094 20.7635L50.6042 55.9908C50.7143 56.3581 50.6041 56.5416 50.2739 56.5413H43.1183C42.9954 56.5549 42.8717 56.5233 42.7704 56.4524C42.6692 56.3815 42.5971 56.2761 42.5679 56.156L39.7607 48.0096ZM29.0274 41.0743H37.7241C37.504 40.3407 37.2471 39.515 36.9536 38.5973C36.6594 37.6805 36.3476 36.6989 36.0179 35.6525C35.6876 34.6068 35.3572 33.561 35.027 32.5151C34.6968 31.4693 34.3941 30.4602 34.1189 29.4877C33.8436 28.5159 33.5959 27.6261 33.3759 26.8182H33.3208C33.0109 28.3048 32.6251 29.7745 32.1649 31.2216C31.6506 32.8729 31.1276 34.5609 30.5961 36.2855C30.0637 38.0108 29.5408 39.6071 29.0274 41.0743Z"
+          fill="#FF9A00"
+        />
+        <path
+          d="M58.0343 26.3229C57.4729 26.3455 56.9131 26.2493 56.3914 26.0406C55.8697 25.8319 55.398 25.5155 55.007 25.112C54.6171 24.691 54.3142 24.1971 54.1158 23.6587C53.9174 23.1202 53.8274 22.5479 53.851 21.9746C53.831 21.4069 53.9309 20.8414 54.1443 20.315C54.3577 19.7886 54.6798 19.3131 55.0894 18.9197C55.4951 18.5303 55.974 18.2252 56.4984 18.0221C57.0227 17.8189 57.5822 17.7218 58.1443 17.7363C59.4654 17.7363 60.5021 18.1307 61.2543 18.9197C61.634 19.3297 61.9291 19.8105 62.1227 20.3347C62.3163 20.8589 62.4046 21.4162 62.3826 21.9746C62.4056 22.5501 62.3127 23.1245 62.1094 23.6634C61.9061 24.2024 61.5966 24.695 61.1992 25.112C60.7839 25.5214 60.2882 25.8404 59.7435 26.0488C59.1988 26.2572 58.6169 26.3505 58.0343 26.3229ZM54.2362 55.9909V29.6805C54.2362 29.3503 54.3825 29.1851 54.6766 29.1851H61.4469C61.7403 29.1851 61.887 29.3502 61.8873 29.6805V55.9909C61.8873 56.3582 61.7405 56.5416 61.4469 56.5414H54.7317C54.4015 56.5414 54.2364 56.3579 54.2362 55.9909Z"
+          fill="#FF9A00"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_906_1865">
+          <rect width="82.0513" height="80" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+export const PnpmBrand = ({ className }: icon) => {
+  return (
+    <svg
+      className={className}
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="76.58987244897958 44 164.00775510204068 164"
+      width="160.01"
+      height="160"
+    >
+      <defs>
+        <path
+          d="M237.6 95L187.6 95L187.6 45L237.6 45L237.6 95Z"
+          id="b45vdTD8hs"
+        ></path>
+        <path
+          d="M182.59 95L132.59 95L132.59 45L182.59 45L182.59 95Z"
+          id="a40WtxIl8d"
+        ></path>
+        <path
+          d="M127.59 95L77.59 95L77.59 45L127.59 45L127.59 95Z"
+          id="h2CN9AEEpe"
+        ></path>
+        <path
+          d="M237.6 150L187.6 150L187.6 100L237.6 100L237.6 150Z"
+          id="dqv5133G8"
+        ></path>
+        <path
+          d="M182.59 150L132.59 150L132.59 100L182.59 100L182.59 150Z"
+          id="b1Lv79ypvm"
+        ></path>
+        <path
+          d="M182.59 205L132.59 205L132.59 155L182.59 155L182.59 205Z"
+          id="hy1IZWwLX"
+        ></path>
+        <path
+          d="M237.6 205L187.6 205L187.6 155L237.6 155L237.6 205Z"
+          id="akQfjxQes"
+        ></path>
+        <path
+          d="M127.59 205L77.59 205L77.59 155L127.59 155L127.59 205Z"
+          id="bdSrwE5pk"
+        ></path>
+      </defs>
+      <g>
+        <g>
+          <use
+            xlinkHref="#b45vdTD8hs"
+            opacity="1"
+            fill="#f9ad00"
+            fill-opacity="1"
+          ></use>
+        </g>
+        <g>
+          <use
+            xlinkHref="#a40WtxIl8d"
+            opacity="1"
+            fill="#f9ad00"
+            fill-opacity="1"
+          ></use>
+        </g>
+        <g>
+          <use
+            xlinkHref="#h2CN9AEEpe"
+            opacity="1"
+            fill="#f9ad00"
+            fill-opacity="1"
+          ></use>
+        </g>
+        <g>
+          <use
+            xlinkHref="#dqv5133G8"
+            opacity="1"
+            fill="#f9ad00"
+            fill-opacity="1"
+          ></use>
+        </g>
+        <g>
+          <use
+            xlinkHref="#b1Lv79ypvm"
+            opacity="1"
+            fill="#ffffff"
+            fill-opacity="1"
+          ></use>
+        </g>
+        <g>
+          <use
+            xlinkHref="#hy1IZWwLX"
+            opacity="1"
+            fill="#ffffff"
+            fill-opacity="1"
+          ></use>
+        </g>
+        <g>
+          <use
+            xlinkHref="#akQfjxQes"
+            opacity="1"
+            fill="#ffffff"
+            fill-opacity="1"
+          ></use>
+        </g>
+        <g>
+          <use
+            xlinkHref="#bdSrwE5pk"
+            opacity="1"
+            fill="#ffffff"
+            fill-opacity="1"
+          ></use>
+        </g>
+      </g>
+    </svg>
+  );
+};
+
+export const ClerkBrand = ({ className }: icon) => {
+  return (
+    <svg
+      className={className}
+      role="img"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      height="24"
+      width="24"
+    >
+      <path
+        d="m21.47 20.829 -2.881 -2.881a0.572 0.572 0 0 0 -0.7 -0.084 6.854 6.854 0 0 1 -7.081 0 0.576 0.576 0 0 0 -0.7 0.084l-2.881 2.881a0.576 0.576 0 0 0 -0.103 0.69 0.57 0.57 0 0 0 0.166 0.186 12 12 0 0 0 14.113 0 0.58 0.58 0 0 0 0.239 -0.423 0.576 0.576 0 0 0 -0.172 -0.453Zm0.002 -17.668 -2.88 2.88a0.569 0.569 0 0 1 -0.701 0.084A6.857 6.857 0 0 0 8.724 8.08a6.862 6.862 0 0 0 -1.222 3.692 6.86 6.86 0 0 0 0.978 3.764 0.573 0.573 0 0 1 -0.083 0.699l-2.881 2.88a0.567 0.567 0 0 1 -0.864 -0.063A11.993 11.993 0 0 1 6.771 2.7a11.99 11.99 0 0 1 14.637 -0.405 0.566 0.566 0 0 1 0.232 0.418 0.57 0.57 0 0 1 -0.168 0.448Zm-7.118 12.261a3.427 3.427 0 1 0 0 -6.854 3.427 3.427 0 0 0 0 6.854Z"
+        fill="#fff"
+        stroke-width="1"
+      ></path>
+    </svg>
+  );
+};
+
+export const NodeBrand = ({ className }: icon) => {
+  return (
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      width="100"
+      height="100"
+      viewBox="0 0 48 48"
+    >
+      <path
+        fill="#21a366"
+        d="M24.007,45.419c-0.574,0-1.143-0.15-1.646-0.44l-5.24-3.103c-0.783-0.438-0.401-0.593-0.143-0.682	c1.044-0.365,1.255-0.448,2.369-1.081c0.117-0.067,0.27-0.043,0.39,0.028l4.026,2.389c0.145,0.079,0.352,0.079,0.486,0l15.697-9.061	c0.145-0.083,0.24-0.251,0.24-0.424V14.932c0-0.181-0.094-0.342-0.243-0.432L24.253,5.446c-0.145-0.086-0.338-0.086-0.483,0	L8.082,14.499c-0.152,0.086-0.249,0.255-0.249,0.428v18.114c0,0.173,0.094,0.338,0.244,0.42l4.299,2.483	c2.334,1.167,3.76-0.208,3.76-1.591V16.476c0-0.255,0.2-0.452,0.456-0.452h1.988c0.248,0,0.452,0.196,0.452,0.452v17.886	c0,3.112-1.697,4.9-4.648,4.9c-0.908,0-1.623,0-3.619-0.982l-4.118-2.373C5.629,35.317,5,34.216,5,33.042V14.928	c0-1.179,0.629-2.279,1.646-2.861L22.36,3.002c0.994-0.562,2.314-0.562,3.301,0l15.694,9.069C42.367,12.656,43,13.753,43,14.932	v18.114c0,1.175-0.633,2.271-1.646,2.861L25.66,44.971c-0.503,0.291-1.073,0.44-1.654,0.44"
+      ></path>
+      <path
+        fill="#21a366"
+        d="M28.856,32.937c-6.868,0-8.308-3.153-8.308-5.797c0-0.251,0.203-0.452,0.455-0.452h2.028	c0.224,0,0.413,0.163,0.448,0.384c0.306,2.066,1.218,3.108,5.371,3.108c3.308,0,4.715-0.747,4.715-2.502	c0-1.01-0.401-1.76-5.54-2.263c-4.299-0.424-6.955-1.371-6.955-4.809c0-3.167,2.672-5.053,7.147-5.053	c5.026,0,7.517,1.745,7.831,5.493c0.012,0.13-0.035,0.255-0.122,0.35c-0.086,0.09-0.208,0.145-0.334,0.145h-2.039	c-0.212,0-0.397-0.149-0.44-0.354c-0.491-2.173-1.678-2.868-4.904-2.868c-3.611,0-4.031,1.257-4.031,2.2	c0,1.143,0.495,1.477,5.367,2.122c4.825,0.64,7.116,1.544,7.116,4.935c0,3.418-2.853,5.379-7.827,5.379"
+      ></path>
+    </svg>
+  );
+};
+
+export const MySqlBrand = ({ className }: icon) => {
+  return (
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMid"
+      viewBox="0 0 256 252"
+    >
+      <path
+        d="M236 194c-14 0-25 1-34 5-3 1-7 1-7 4l3 6c2 3 5 8 9 11l11 8 21 10 11 9 6 4-3-6-5-5c-5-7-11-13-18-18-6-3-18-9-20-15h-1l12-3 18-3 8-2v-2l-9-10c-8-8-18-15-28-22l-18-8c-2-1-6-2-7-4l-7-13-15-30-8-20c-18-30-38-48-68-65-6-4-14-5-22-7l-13-1-8-6C34 5 8-9 1 9c-5 11 7 22 11 28l9 13 3 9c3 8 5 17 9 24l6 10c2 2 4 3 5 6-3 4-3 9-4 13-7 20-4 44 5 59 2 4 9 14 18 10 8-3 6-13 8-22l1-4 8 14c5 9 14 18 22 24 4 3 8 8 13 10l-4-4-9-10c-8-10-14-21-20-32l-7-17-3-6c-3 4-7 7-9 12-3 7-3 17-4 26h-1c-6-1-8-7-10-12-5-12-6-32-1-46 1-4 6-15 4-19-1-3-4-5-6-7l-7-12-10-30-9-13c-3-5-7-8-10-14-1-2-2-5 0-7l2-2c2-2 9 0 11 1 6 3 12 5 17 9l8 6h4c6 1 12 0 17 2 9 3 18 7 25 12 23 14 42 35 54 59 3 4 3 8 5 12l12 26c4 8 7 16 12 23 3 4 14 6 18 8l12 4 18 12c2 2 11 7 12 10Z"
+        fill="#00546B"
+        stroke="#00546B"
+        strokeWidth="4"
+      />
+      <path
+        d="m58 43-7 1 6 7 4 9v-1c3-1 4-4 4-8l-2-4-5-4Z"
+        fill="#00546B"
+        stroke="#00546B"
+        strokeWidth="3"
+      />
+    </svg>
+  );
+};
+
+export const MobileIcon = ({ className }: icon) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`icon icon-tabler icons-tabler-outline icon-tabler-device-mobile ${className}`}
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
+      <path d="M11 4h2" />
+      <path d="M12 17v.01" />
+    </svg>
+  );
+};
+
+export const TerminalIcon = ({ className }: icon) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`icon icon-tabler icons-tabler-outline icon-tabler-terminal-2 ${className}`}
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M8 9l3 3l-3 3" />
+      <path d="M13 15l3 0" />
+      <path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+    </svg>
+  );
+};
+
+export const CompassIcon = ({ className }: icon) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`icon icon-tabler icons-tabler-outline icon-tabler-compass ${className}`}
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M8 16l2 -6l6 -2l-2 6l-6 2" />
+      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+      <path d="M12 3l0 2" />
+      <path d="M12 19l0 2" />
+      <path d="M3 12l2 0" />
+      <path d="M19 12l2 0" />
+    </svg>
+  );
+};
+
+export const WebIcon = ({ className }: icon) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      className={`icon icon-tabler icons-tabler-outline icon-tabler-world ${className}`}
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+      <path d="M3.6 9h16.8" />
+      <path d="M3.6 15h16.8" />
+      <path d="M11.5 3a17 17 0 0 0 0 18" />
+      <path d="M12.5 3a17 17 0 0 1 0 18" />
+    </svg>
+  );
+};
+
+export const VercelBrand = ({ className }: icon) => {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 256 222"
+      width="256"
+      height="222"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMid"
+    >
+      <path fill="#fff" d="m128 0 128 221.705H0z" />
+    </svg>
+  );
+};
+
+export const ScreenIcon = ({ className }: icon) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`icon icon-tabler icons-tabler-outline icon-tabler-device-desktop ${className}`}
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z" />
+      <path d="M7 20h10" />
+      <path d="M9 16v4" />
+      <path d="M15 16v4" />
+    </svg>
+  );
+};
+
+export const WWWICon = ({ className }: icon) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`icon icon-tabler icons-tabler-outline icon-tabler-world-www ${className}`}
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M19.5 7a9 9 0 0 0 -7.5 -4a8.991 8.991 0 0 0 -7.484 4" />
+      <path d="M11.5 3a16.989 16.989 0 0 0 -1.826 4" />
+      <path d="M12.5 3a16.989 16.989 0 0 1 1.828 4" />
+      <path d="M19.5 17a9 9 0 0 1 -7.5 4a8.991 8.991 0 0 1 -7.484 -4" />
+      <path d="M11.5 21a16.989 16.989 0 0 1 -1.826 -4" />
+      <path d="M12.5 21a16.989 16.989 0 0 0 1.828 -4" />
+      <path d="M2 10l1 4l1.5 -4l1.5 4l1 -4" />
+      <path d="M17 10l1 4l1.5 -4l1.5 4l1 -4" />
+      <path d="M9.5 10l1 4l1.5 -4l1.5 4l1 -4" />
+    </svg>
+  );
+};
+
+export const OutTerminal = ({ className }: icon) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`icon icon-tabler icons-tabler-outline icon-tabler-terminal ${className}`}
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M5 7l5 5l-5 5" />
+      <path d="M12 19l7 0" />
+    </svg>
+  );
+};
+
+export const HTMLBrand = ({ className }: icon) => {
+  return (
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 452 520"
+    >
+      <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
+      <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
+      <path
+        fill="#ecedee"
+        d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"
+      />
+      <path
+        fill="#fff"
+        d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"
+      />
+    </svg>
+  );
+};
+
+export const CSSBrand = ({ className }: icon) => {
+  return (
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      width="512"
+      height="512"
+      viewBox="0 0 512 512"
+    >
+      <path
+        fill="#264de4"
+        d="M71.357 460.819 30.272 0h451.456l-41.129 460.746L255.724 512z"
+      />
+      <path fill="#2965f1" d="m405.388 431.408 35.148-393.73H256v435.146z" />
+      <path
+        fill="#ebebeb"
+        d="m124.46 208.59 5.065 56.517H256V208.59zm-5.041-57.875H256V94.197H114.281zM256 355.372l-.248.066-62.944-16.996-4.023-45.076h-56.736l7.919 88.741 115.772 32.14.26-.073z"
+      />
+      <path
+        fill="#fff"
+        d="M255.805 208.59v56.517H325.4l-6.56 73.299-63.035 17.013v58.8l115.864-32.112.85-9.549 13.28-148.792 1.38-15.176 10.203-114.393H255.805v56.518h79.639L330.3 208.59z"
+      />
+    </svg>
+  );
+};
+
+export const DataBaseIcon = ({ className }: icon) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`icon icon-tabler icons-tabler-outline icon-tabler-database ${className}`}
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+      <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+      <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+    </svg>
+  );
+};

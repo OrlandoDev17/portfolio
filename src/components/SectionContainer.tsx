@@ -20,7 +20,7 @@ export default function SectionContainer({
   return (
     <section
       id={id}
-      className={`flex flex-col items-center justify-center px-8 md:px-16 xl:px-32 2xl:px-64 py-14 ${className}`}
+      className={`flex flex-col items-center justify-center px-8 md:px-16 xl:px-32 2xl:px-64 py-14 gap-12 ${className}`}
     >
       <div className="flex flex-col items-center justify-center gap-4">
         <h2 className="flex items-center gap-2 text-4xl font-semibold dark:text-white">

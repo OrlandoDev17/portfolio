@@ -1,7 +1,8 @@
 import SectionContainer from '../components/SectionContainer';
-import { BriefCaseIcon } from '../components/Icons';
+import { BriefCaseIcon, MessageIcon } from '../components/Icons';
 import { PROJECTS } from '../consts/const';
 import ProjectCard from '../components/ProjectCard';
+import GradientButton from '../components/GradientButton';
 
 export default function Projects() {
   // Map tags for each project before rendering
@@ -33,6 +34,15 @@ export default function Projects() {
           />
         ))}
       </ul>
+      <div className="flex flex-col justify-center items-center gap-4">
+        <span className="text-lg text-gray-600 dark:text-gray-300">
+          ¿Quieres ver más proyectos o colaborar en algo nuevo?
+        </span>
+        <GradientButton>
+          <MessageIcon />
+          Hablemos de tu proyecto
+        </GradientButton>
+      </div>
     </SectionContainer>
   );
 }
