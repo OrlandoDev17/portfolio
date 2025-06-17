@@ -1,17 +1,29 @@
 // Tipos
-import type { NavbarItem, ProjectItem, SocialItem, StackItem } from './types';
+import type {
+  Hobbie,
+  NavbarItem,
+  ProjectItem,
+  Skill,
+  SocialItem,
+  StackItem,
+} from './types';
 // Iconos
 import {
   AstroBrand,
+  BookIcon,
   ClerkBrand,
+  ClockIcon,
   CompassIcon,
   CSSBrand,
   DataBaseIcon,
   FigmaBrand,
+  GamepadIcon,
   GitBrand,
   GitHubBrand,
   GmailBrand,
+  HeartIcon,
   HTMLBrand,
+  IdeaIcon,
   IllustratorBrand,
   JavaScriptBrand,
   LinkedInBrand,
@@ -27,7 +39,9 @@ import {
   TailwindBrand,
   TelegramBrand,
   TerminalIcon,
+  TrophyIcon,
   TypeScriptBrand,
+  UsersIcon,
   VercelBrand,
   VsCodeBrand,
   WebIcon,
@@ -76,7 +90,7 @@ export const SOCIAL_MEDIAS: SocialItem[] = [
   {
     id: 'linkedin',
     icon: LinkedInBrand,
-    url: 'www.linkedin.com/in/orlando-lópez1707',
+    url: 'https://www.linkedin.com/in/orlando-lópez1707',
     bgColor: 'bg-blue-300',
     hoverBgColor: 'hover:bg-blue-400',
   },
@@ -309,3 +323,60 @@ export const STACKS: StackItem[] = [
     darkItemBgColor: 'dark:bg-orange-700/20',
   },
 ] as const;
+
+export const HOBBIES: Hobbie[] = [
+  {
+    icon: BookIcon,
+    text: 'Aprendizaje continuo y autodidacta',
+    color: 'text-yellow-500',
+  },
+  {
+    icon: GamepadIcon,
+    text: 'Amante de los videojuegos y del desarrollo web',
+    color: 'text-blue-500',
+  },
+  {
+    icon: WWWICon,
+    text: 'Apasionado al código limpio y buenas practicas',
+    color: 'text-green-500',
+  },
+] as const;
+
+export const SKILLS: Skill[] = [
+  {
+    icon: HeartIcon,
+    title: 'Pasión por el desarrollo',
+    text: 'Apasionado por crear experiencias digitales excepcionales y resolver problemas complejos con soluciones elegantes',
+    color: 'text-red-500',
+  },
+  {
+    icon: BookIcon,
+    title: 'Aprendizaje Continuo',
+    text: 'Constantemente explorando nuevas tecnologías y mejores prácticas para mantenerme actualizado en un campo en constante evolución',
+    color: 'text-blue-500',
+  },
+  {
+    icon: ClockIcon,
+    title: 'Experiencia Autodidacta',
+    text: 'Más de 2 años de experiencia autodidacta desarrollando proyectos personales y colaborativos que me han permitido crecer profesionalmente',
+    color: 'text-green-500',
+  },
+  {
+    icon: TrophyIcon,
+    title: 'Enfoque en Resultados',
+    text: 'Comprometido con entregar productos de alta calidad, optimizados y con excelente experiencia de usuario',
+    color: 'text-yellow-500',
+  },
+  {
+    icon: IdeaIcon,
+    title: 'Resolución de Problemas',
+    text: 'Habilidad para analizar problemas complejos y encontrar soluciones creativas y eficientes',
+    color: 'text-orange-500',
+  },
+  {
+    icon: UsersIcon,
+    title: 'Trabajo en Equipo',
+    text: 'Experiencia colaborando en equipos multidisciplinarios, aportando ideas y aprendiendo de otros profesionales',
+    color: 'text-violet-500',
+  },
+];

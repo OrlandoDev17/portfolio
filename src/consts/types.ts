@@ -47,3 +47,16 @@ export interface StackItem {
   darkItemBgColor: string;
   darkHoverColor?: string;
 }
+
+export interface Hobbie {
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  text: string;
+  color: string;
+}
+
+export interface Skill {
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  title: string;
+  text: string;
+  color: string;
+}
