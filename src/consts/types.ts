@@ -60,3 +60,10 @@ export interface Skill {
   text: string;
   color: string;
 }
+
+export interface Field {
+  id: string;
+  label: string;
+  placeholder: string;
+  type: string;
+}

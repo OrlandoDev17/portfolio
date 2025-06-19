@@ -1,5 +1,6 @@
 // Tipos
 import type {
+  Field,
   Hobbie,
   NavbarItem,
   ProjectItem,
@@ -380,3 +381,24 @@ export const SKILLS: Skill[] = [
     color: 'text-violet-500',
   },
 ];
+
+export const FORM_FIELDS: Field[] = [
+  {
+    id: 'name',
+    label: 'Nombre *',
+    placeholder: 'Tu nombre completo',
+    type: 'text',
+  },
+  {
+    id: 'email',
+    label: 'Email *',
+    placeholder: 'tu@gmail.com',
+    type: 'email',
+  },
+  {
+    id: 'topic',
+    label: 'Asunto',
+    placeholder: 'Asunto del mensaje',
+    type: 'text',
+  },
+] as const;

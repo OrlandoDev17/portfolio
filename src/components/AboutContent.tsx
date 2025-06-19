@@ -26,7 +26,7 @@ export default function AboutContent() {
         ))}
       </ul>
       <div className="flex justify-center">
-        <GradientButton className="justify-center">
+        <GradientButton href="./docs/CV.pdf" className="justify-center">
           <DownloadIcon />
           Descargar Curriculum
         </GradientButton>

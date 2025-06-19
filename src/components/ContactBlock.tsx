@@ -18,7 +18,7 @@ export default function ContactBlock() {
             <span className="flex justify-center items-center size-4 bg-green-500 dark:bg-green-200 rounded-full animate-pulse"></span>
             <h4 className="font-medium">Disponible para nuevos proyectos</h4>
           </div>
-          <GradientButton>
+          <GradientButton href="https://wa.me/+584242860846">
             <MessageIcon />
             Enviar Mensaje por Whatsapp
           </GradientButton>

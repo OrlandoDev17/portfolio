@@ -4,15 +4,17 @@ interface BorderButtonProps {
   href?: string;
   className?: string;
   children: ReactNode;
+  onClick?: () => void;
 }
 
 export default function BorderButton({
   href,
   className,
   children,
+  onClick,
 }: BorderButtonProps) {
   return (
-    <button>
+    <button onClick={onClick} type="button">
       <a
         href={href}
         rel="noopener noreferrer"

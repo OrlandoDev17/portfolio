@@ -1,6 +1,6 @@
 import BorderButton from '../components/BorderButton';
-import GradientButton from '../components/GradientButton';
-import { BriefCaseIcon, DownloadIcon, MessageIcon } from '../components/Icons';
+import { BriefCaseIcon, DownloadIcon } from '../components/Icons';
+import ContactModal from '../components/ContactModal';
 import SocialButton from '../components/SocialButton';
 import { SOCIAL_MEDIAS } from '../consts/const';
 
@@ -29,11 +29,8 @@ export default function Hero() {
         </article>
         <footer className="flex flex-col justify-center gap-6">
           <div className="flex items-center gap-6">
-            <GradientButton>
-              <MessageIcon />
-              Contactame
-            </GradientButton>
-            <BorderButton>
+            <ContactModal />
+            <BorderButton href="./docs/CV.pdf">
               <DownloadIcon />
               Descargar CV
             </BorderButton>
