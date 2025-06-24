@@ -1,24 +1,8 @@
-import BorderButton from './BorderButton';
-import GradientButton from './GradientButton';
-import { CodeIcon, RocketIcon } from './Icons';
-
-interface Tag {
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-  name: string;
-}
-
-interface ProjectLinks {
-  demo: string;
-  code: string;
-}
-
-interface ProjectProps {
-  image: string;
-  title: string;
-  description: string;
-  tags: Tag[];
-  links: ProjectLinks[];
-}
+import React from "react";
+import BorderButton from "./BorderButton";
+import GradientButton from "./GradientButton";
+import { CodeIcon, RocketIcon } from "./Icons";
+import type { ProjectProps } from "../consts/types";
 
 export default function ProjectCard({
   image,
@@ -26,10 +10,14 @@ export default function ProjectCard({
   description,
   tags,
   links,
+  className,
+  ref,
 }: ProjectProps) {
   return (
-    <li>
-      <article className="flex flex-col gap-6 rounded-xl shadow-gray-800 shadow-lg max-w-md hover:shadow-xl transition dark:shadow-gray-600">
+    <li ref={ref}>
+      <article
+        className={`flex flex-col gap-6 rounded-xl shadow-gray-800 shadow-lg max-w-md hover:shadow-xl transition dark:shadow-gray-600 ${className}`}
+      >
         <picture>
           <img
             className="rounded-t-xl border-b-2 border-slate-700"
@@ -60,24 +48,24 @@ export default function ProjectCard({
               </li>
             ))}
           </ul>
-          <aside className="flex flex-col lg:flex-row justify-between items-center py-4 w-full">
-            {links.map(({ demo, code }) => (
-              <>
+          <aside className="flex flex-col lg:flex-row justify-between items-center py-4 w-full gap-4">
+            {links.map((link) => (
+              <React.Fragment key={link.id}>
                 <GradientButton
                   className="w-full lg:w-48 justify-center"
-                  href={demo}
+                  href={link.demo}
                 >
                   <RocketIcon />
                   Ver Demo
                 </GradientButton>
                 <BorderButton
                   className="w-full lg:w-48 justify-center"
-                  href={code}
+                  href={link.code}
                 >
                   <CodeIcon />
                   Ver Código
                 </BorderButton>
-              </>
+              </React.Fragment>
             ))}
           </aside>
         </div>

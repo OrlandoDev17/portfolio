@@ -1,11 +1,4 @@
-import type { ReactNode } from 'react';
-
-interface BorderButtonProps {
-  href?: string;
-  className?: string;
-  children: ReactNode;
-  onClick?: () => void;
-}
+import type { BorderButtonProps } from "../consts/types";
 
 export default function BorderButton({
   href,

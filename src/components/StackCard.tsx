@@ -1,42 +1,29 @@
-import type { ComponentType } from 'react';
-
-type Tag = {
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-  name: string;
-};
-
-interface StackCardProps {
-  icon: ComponentType<React.SVGProps<SVGSVGElement>>;
-  title: string;
-  tags: Tag[];
-  textColor: string;
-  bgColor: string;
-  borderColor: string;
-  itemBgColor: string;
-  shadowColor: string;
-  hoverColor: string;
-  darkTextColor: string;
-  darkBgColor: string;
-  darkItemBgColor: string;
-}
+import type { StackCardProps } from '../consts/types';
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 export default function StackCard({
   icon: Icon,
   title,
   tags,
-  bgColor,
   textColor,
-  itemBgColor,
+  bgColor,
   borderColor,
+  itemBgColor,
   shadowColor,
   hoverColor,
-  darkBgColor,
   darkTextColor,
+  darkBgColor,
   darkItemBgColor,
+  animation,
 }: StackCardProps) {
+  const [cardRef, isAnimated] = useIntersectionObserver();
+
+  const getAnimationClasses = (animationClass: string | undefined) => {
+    return `initial-hidden ${isAnimated ? animationClass : ''}`;  };
   return (
     <article
-      className={`flex flex-col gap-6 border-4 ${borderColor} p-6 rounded-2xl hover:scale-102 transition dark:bg-slate-900 shadow-lg ${shadowColor} hover:shadow-xl`}
+      ref={cardRef}
+      className={`${getAnimationClasses(animation)} flex flex-col gap-6 border-4 ${borderColor} p-6 rounded-2xl hover:scale-102 transition dark:bg-slate-900 shadow-lg ${shadowColor} hover:shadow-xl`}
     >
       <div className="flex items-center gap-4">
         <Icon

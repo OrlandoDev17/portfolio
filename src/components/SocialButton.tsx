@@ -1,11 +1,4 @@
-import type { ComponentType, SVGProps } from 'react';
-
-interface SocialButtonProps {
-  href: string;
-  icon: ComponentType<SVGProps<SVGSVGElement>>;
-  bgColor: string;
-  hoverBgColor: string;
-}
+import type { SocialButtonProps } from '../consts/types';
 
 export default function SocialButton({
   href,

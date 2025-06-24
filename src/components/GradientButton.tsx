@@ -1,11 +1,4 @@
-import type { ReactNode } from 'react';
-
-interface GradientButtonProps {
-  href?: string;
-  className?: string;
-  children: ReactNode;
-  onClick?: () => void;
-}
+import type { GradientButtonProps } from '../consts/types';
 
 export default function GradientButton({
   href,

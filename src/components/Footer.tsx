@@ -1,5 +1,5 @@
-import ContactBlock from './ContactBlock';
-import { MailIcon } from './Icons';
+import ContactBlock from "./ContactBlock";
+import { MailIcon } from "./Icons";
 
 export default function Footer() {
   return (
@@ -16,7 +16,7 @@ export default function Footer() {
       <ContactBlock />
       <div className="flex flex-col justify-center items-center gap-8 w-full">
         <hr className="w-full text-gray-300" />
-        <p className="text-gray-600 dark:text-gray-300">
+        <p className="text-gray-600 dark:text-gray-300 text-center text-balance">
           © 2025 Portfolio de Orlando López. Desarrollado con ❤️ Usando React y
           Tailwind Css
         </p>

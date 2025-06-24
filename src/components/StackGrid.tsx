@@ -19,6 +19,7 @@ export default function StackGrid() {
           darkTextColor,
           darkBgColor,
           darkItemBgColor,
+          animation
         }) => (
           <StackCard
             key={id}
@@ -34,6 +35,7 @@ export default function StackGrid() {
             darkTextColor={darkTextColor}
             darkBgColor={darkBgColor}
             darkItemBgColor={darkItemBgColor}
+            animation={animation}
           />
         )
       )}

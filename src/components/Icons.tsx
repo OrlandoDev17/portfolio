@@ -118,8 +118,8 @@ export const GmailBrand = ({ className }: icon) => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 49.4 512 399.42"
     >
-      <g fill="none" fill-rule="evenodd">
-        <g fill-rule="nonzero">
+      <g fill="none" fillRule="evenodd">
+        <g fillRule="nonzero">
           <path
             fill="#4285f4"
             d="M34.91 448.818h81.454V251L0 163.727V413.91c0 19.287 15.622 34.91 34.91 34.91z"
@@ -139,7 +139,7 @@ export const GmailBrand = ({ className }: icon) => {
         />
         <path
           fill="#c5221f"
-          fill-rule="nonzero"
+          fillRule="nonzero"
           d="M0 117.182v46.545L116.364 251V99.727L83.782 75.291C49.25 49.4 0 74.04 0 117.18z"
         />
       </g>
@@ -158,8 +158,8 @@ export const GitHubBrand = ({ className }: icon) => {
       className={className}
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
         transform="scale(64)"
         fill="#ffff"
@@ -220,8 +220,8 @@ export const TelegramBrand = ({ className }: icon) => {
     >
       <defs>
         <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
-          <stop offset="0%" stop-color="#2AABEE" />
-          <stop offset="100%" stop-color="#229ED9" />
+          <stop offset="0%" stopColor="#2AABEE" />
+          <stop offset="100%" stopColor="#229ED9" />
         </linearGradient>
       </defs>
       <path
@@ -248,7 +248,7 @@ export const NextBrand = ({ className }: icon) => {
     >
       <mask
         id="mask0_408_139"
-        style={{ maskType: 'alpha' }}
+        style={{ maskType: "alpha" }}
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"
@@ -264,7 +264,7 @@ export const NextBrand = ({ className }: icon) => {
           r="87"
           fill="black"
           stroke="white"
-          stroke-width="6"
+          strokeWidth="6"
         />
         <path
           d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z"
@@ -287,8 +287,8 @@ export const NextBrand = ({ className }: icon) => {
           y2="160.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_408_139"
@@ -298,8 +298,8 @@ export const NextBrand = ({ className }: icon) => {
           y2="106.875"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>
@@ -314,12 +314,12 @@ export const TailwindBrand = ({ className }: icon) => {
       fill="none"
       viewBox="0 0 54 33"
     >
-      <g clip-path="url(#a)">
+      <g clipPath="url(#a)">
         <path
           fill="#38bdf8"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
         />
       </g>
       <defs>
@@ -368,7 +368,7 @@ export const SupabaseBrand = ({ className }: icon) => {
       <path
         d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z"
         fill="url(#paint1_linear)"
-        fill-opacity="0.2"
+        fillOpacity="0.2"
       />
       <path
         d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z"
@@ -383,8 +383,8 @@ export const SupabaseBrand = ({ className }: icon) => {
           y2="71.8295"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#249361" />
-          <stop offset="1" stop-color="#3ECF8E" />
+          <stop stopColor="#249361" />
+          <stop offset="1" stopColor="#3ECF8E" />
         </linearGradient>
         <linearGradient
           id="paint1_linear"
@@ -395,7 +395,7 @@ export const SupabaseBrand = ({ className }: icon) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stop-opacity="0" />
+          <stop offset="1" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>
@@ -549,9 +549,9 @@ export const VsCodeBrand = ({ className }: icon) => {
       >
         <path
           fill="#fff"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           d="M70.912 99.317a6.223 6.223 0 0 0 4.96-.19l20.589-9.907A6.25 6.25 0 0 0 100 83.587V16.413a6.25 6.25 0 0 0-3.54-5.632L75.874.874a6.226 6.226 0 0 0-7.104 1.21L29.355 38.04 12.187 25.01a4.162 4.162 0 0 0-5.318.236l-5.506 5.009a4.168 4.168 0 0 0-.004 6.162L16.247 50 1.36 63.583a4.168 4.168 0 0 0 .004 6.162l5.506 5.01a4.162 4.162 0 0 0 5.318.236l17.168-13.032L68.77 97.917a6.217 6.217 0 0 0 2.143 1.4ZM75.015 27.3 45.11 50l29.906 22.701V27.3Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
         />
       </mask>
       <g mask="url(#a)">
@@ -573,11 +573,11 @@ export const VsCodeBrand = ({ className }: icon) => {
         </g>
         <path
           fill="url(#d)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           d="M70.851 99.317a6.224 6.224 0 0 0 4.96-.19L96.4 89.22a6.25 6.25 0 0 0 3.54-5.633V16.413a6.25 6.25 0 0 0-3.54-5.632L75.812.874a6.226 6.226 0 0 0-7.104 1.21L29.294 38.04 12.126 25.01a4.162 4.162 0 0 0-5.317.236l-5.507 5.009a4.168 4.168 0 0 0-.004 6.162L16.186 50 1.298 63.583a4.168 4.168 0 0 0 .004 6.162l5.507 5.009a4.162 4.162 0 0 0 5.317.236L29.294 61.96l39.414 35.958a6.218 6.218 0 0 0 2.143 1.4ZM74.954 27.3 45.048 50l29.906 22.701V27.3Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           opacity=".25"
-          style={{ mixBlendMode: 'overlay' }}
+          style={{ mixBlendMode: "overlay" }}
         />
       </g>
       <defs>
@@ -587,10 +587,10 @@ export const VsCodeBrand = ({ className }: icon) => {
           height="92.246"
           x="-8.394"
           y="15.829"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -611,10 +611,10 @@ export const VsCodeBrand = ({ className }: icon) => {
           height="116.151"
           x="60.417"
           y="-8.076"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -637,8 +637,8 @@ export const VsCodeBrand = ({ className }: icon) => {
           y2="99.742"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#fff" stop-opacity="0" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#fff" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>
@@ -655,7 +655,7 @@ export const FigmaBrand = ({ className }: icon) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_912_3)">
+      <g clipPath="url(#clip0_912_3)">
         <path
           d="M13.3333 80.0002C20.6933 80.0002 26.6667 74.0268 26.6667 66.6668V53.3335H13.3333C5.97333 53.3335 0 59.3068 0 66.6668C0 74.0268 5.97333 80.0002 13.3333 80.0002Z"
           fill="#0ACF83"
@@ -696,7 +696,7 @@ export const IllustratorBrand = ({ className }: icon) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_906_1865)">
+      <g clipPath="url(#clip0_906_1865)">
         <path
           d="M67.5214 0H14.5299C6.50526 0 0 6.50526 0 14.5299V65.4701C0 73.4947 6.50526 80 14.5299 80H67.5214C75.546 80 82.0513 73.4947 82.0513 65.4701V14.5299C82.0513 6.50526 75.546 0 67.5214 0Z"
           fill="#330000"
@@ -771,7 +771,7 @@ export const PnpmBrand = ({ className }: icon) => {
             xlinkHref="#b45vdTD8hs"
             opacity="1"
             fill="#f9ad00"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
         <g>
@@ -779,7 +779,7 @@ export const PnpmBrand = ({ className }: icon) => {
             xlinkHref="#a40WtxIl8d"
             opacity="1"
             fill="#f9ad00"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
         <g>
@@ -787,7 +787,7 @@ export const PnpmBrand = ({ className }: icon) => {
             xlinkHref="#h2CN9AEEpe"
             opacity="1"
             fill="#f9ad00"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
         <g>
@@ -795,7 +795,7 @@ export const PnpmBrand = ({ className }: icon) => {
             xlinkHref="#dqv5133G8"
             opacity="1"
             fill="#f9ad00"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
         <g>
@@ -803,7 +803,7 @@ export const PnpmBrand = ({ className }: icon) => {
             xlinkHref="#b1Lv79ypvm"
             opacity="1"
             fill="#ffffff"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
         <g>
@@ -811,7 +811,7 @@ export const PnpmBrand = ({ className }: icon) => {
             xlinkHref="#hy1IZWwLX"
             opacity="1"
             fill="#ffffff"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
         <g>
@@ -819,7 +819,7 @@ export const PnpmBrand = ({ className }: icon) => {
             xlinkHref="#akQfjxQes"
             opacity="1"
             fill="#ffffff"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
         <g>
@@ -827,7 +827,7 @@ export const PnpmBrand = ({ className }: icon) => {
             xlinkHref="#bdSrwE5pk"
             opacity="1"
             fill="#ffffff"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
       </g>
@@ -848,7 +848,7 @@ export const ClerkBrand = ({ className }: icon) => {
       <path
         d="m21.47 20.829 -2.881 -2.881a0.572 0.572 0 0 0 -0.7 -0.084 6.854 6.854 0 0 1 -7.081 0 0.576 0.576 0 0 0 -0.7 0.084l-2.881 2.881a0.576 0.576 0 0 0 -0.103 0.69 0.57 0.57 0 0 0 0.166 0.186 12 12 0 0 0 14.113 0 0.58 0.58 0 0 0 0.239 -0.423 0.576 0.576 0 0 0 -0.172 -0.453Zm0.002 -17.668 -2.88 2.88a0.569 0.569 0 0 1 -0.701 0.084A6.857 6.857 0 0 0 8.724 8.08a6.862 6.862 0 0 0 -1.222 3.692 6.86 6.86 0 0 0 0.978 3.764 0.573 0.573 0 0 1 -0.083 0.699l-2.881 2.88a0.567 0.567 0 0 1 -0.864 -0.063A11.993 11.993 0 0 1 6.771 2.7a11.99 11.99 0 0 1 14.637 -0.405 0.566 0.566 0 0 1 0.232 0.418 0.57 0.57 0 0 1 -0.168 0.448Zm-7.118 12.261a3.427 3.427 0 1 0 0 -6.854 3.427 3.427 0 0 0 0 6.854Z"
         fill="#fff"
-        stroke-width="1"
+        strokeWidth="1"
       ></path>
     </svg>
   );
@@ -979,9 +979,9 @@ export const WebIcon = ({ className }: icon) => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className={`icon icon-tabler icons-tabler-outline icon-tabler-world ${className}`}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />

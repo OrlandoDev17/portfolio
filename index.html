@@ -40,7 +40,21 @@
     <title>Portfolio de Orlando López | Desarrollador FrontEnd</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root" role="main">
+      <!-- El contenido de la aplicación React se renderizará aquí -->
+      <noscript>
+        <div class="no-script">
+          <h1>¡Hola! 👋</h1>
+          <p>Parece que tienes JavaScript deshabilitado en tu navegador.</p>
+          <p>Para una mejor experiencia, te recomiendo activar JavaScript.</p>
+        </div>
+      </noscript>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="/src/main.tsx" defer></script>
+
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" as="script" href="/src/main.tsx" />
   </body>
 </html>
