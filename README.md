@@ -1,54 +1,87 @@
-# React + TypeScript + Vite
+# 🚀 Mi Portafolio Profesional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a mi portafolio personal, una aplicación web moderna y receptiva construida con React, TypeScript y Vite. Este proyecto muestra mis habilidades, proyectos y experiencia de manera profesional y atractiva.
 
-Currently, two official plugins are available:
+## ✨ Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Diseño Responsivo**: Se adapta perfectamente a cualquier dispositivo
+- **Modo Oscuro/Claro**: Interfaz que se adapta a tus preferencias
+- **Animaciones Suaves**: Transiciones y efectos visuales atractivos
+- **Optimizado para SEO**: Mejor visibilidad en los motores de búsqueda
+- **Rendimiento Optimizado**: Carga rápida gracias a Vite
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⚛️ React 18
+- 💡 TypeScript
+- ⚡ Vite
+- 🎨 Tailwind CSS
+- 📱 React Icons
+- 🌙 Dark Mode
+- 🎭 Framer Motion (para animaciones)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Cómo Ejecutar el Proyecto
+
+Sigue estos pasos para ejecutar el proyecto en tu máquina local:
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/tu-usuario/tu-portafolio.git
+   cd tu-portafolio
+   ```
+
+2. **Instalar dependencias**
+   ```bash
+   npm install
+   # o
+   yarn
+   ```
+
+3. **Iniciar el servidor de desarrollo**
+   ```bash
+   npm run dev
+   # o
+   yarn dev
+   ```
+
+4. **Abrir en el navegador**
+   Abre [http://localhost:5173](http://localhost:5173) para ver el proyecto en acción.
+
+## 🏗️ Construir para Producción
+
+Para crear una versión optimizada para producción:
+
+```bash
+npm run build
+# o
+yarn build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📂 Estructura del Proyecto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
 ```
+src/
+├── assets/          # Imágenes y fuentes
+├── components/      # Componentes reutilizables
+├── hooks/           # Custom Hooks
+├── pages/           # Páginas de la aplicación
+├── styles/          # Estilos globales
+├── types/           # Definiciones de tipos TypeScript
+└── utils/           # Utilidades y helpers
+```
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+## 📬 Contacto
+
+¿Tienes alguna pregunta o quieres trabajar juntos? No dudes en contactarme:
+
+- 📧 Email: [tu@email.com](mailto:tu@email.com)
+- 💼 LinkedIn: [Tu Perfil](https://linkedin.com/in/tu-perfil)
+- 🌐 Sitio Web: [tu-sitio.com](https://tu-sitio.com)
+
+---
+
+Hecho con ❤️ por [Tu Nombre] - ¡Gracias por visitar!
