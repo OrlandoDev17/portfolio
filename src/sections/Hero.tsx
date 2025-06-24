@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="flex flex-col md:flex-row justify-center items-center px-4 md:px-16 xl:px-32 2xl:px-64 py-10 pb-18 relative top-22 lg:top-23 gap-8 xl:gap-12 2xl:gap-26 dark:bg-zinc-800 mb-24 h-[110vh] md:h-[65vh]"
+      className="flex flex-col md:flex-row justify-center items-center px-4 md:px-16 xl:px-32 2xl:px-64 py-10 pb-18 relative top-22 lg:top-23 gap-8 xl:gap-12 2xl:gap-26 dark:bg-zinc-800 mb-24 sm:h-[110vh] md:h-[65vh]"
     >
       <div
         className={`flex flex-col items-start gap-8 ${getAnimationClasses} slide-in-left`}

@@ -27,7 +27,7 @@ export default function MeCard() {
               Desarrollador Front-End
             </h3>
           </div>
-          <hr className="w-100 mt-4 text-gray-200 my-4" />
+          <hr className="max-w-100 w-75 md:w-100  mt-4 text-gray-200 my-4" />
           <ul className="flex flex-col gap-4">
             {HOBBIES.map(({ icon: Icon, text, color }, index) => (
               <li key={index} className="flex items-center gap-2">

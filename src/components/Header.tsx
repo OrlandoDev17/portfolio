@@ -2,6 +2,7 @@ import NavbarItem from "./NavbarItem";
 import { NAVBAR_ITEMS } from "../consts/const";
 import ThemeToggle from "./ThemeToggle";
 import UseIntersectionObserver from "../hooks/useIntersectionObserver";
+import Menu from "./Menu";
 
 export default function Header() {
   const [containerRef, isAnimated] = UseIntersectionObserver<HTMLDivElement>();
@@ -24,9 +25,6 @@ export default function Header() {
             src="./logo.svg"
             alt="Logo de Orlando López"
           />
-          <span className="text-xl gradient-text font-semibold md:hidden block">
-            Portfolio Personal
-          </span>
         </picture>
         <ul className="hidden md:flex items-center">
           {NAVBAR_ITEMS.map(({ href, title }, index) => (
@@ -34,6 +32,7 @@ export default function Header() {
           ))}
         </ul>
         <div className="flex items-center gap-2">
+          <Menu />
           <ThemeToggle />
         </div>
       </nav>
