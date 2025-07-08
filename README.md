@@ -78,10 +78,9 @@ Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 
 ¿Tienes alguna pregunta o quieres trabajar juntos? No dudes en contactarme:
 
-- 📧 Email: [tu@email.com](mailto:tu@email.com)
-- 💼 LinkedIn: [Tu Perfil](https://linkedin.com/in/tu-perfil)
-- 🌐 Sitio Web: [tu-sitio.com](https://tu-sitio.com)
+- 📧 Email: [orlandodev1707@gmail.com](mailto:orlandodev1707@gmail.com)
+- 💼 LinkedIn: [Orlando López](https://www.linkedin.com/in/orlando-lópez1707)
 
 ---
 
-Hecho con ❤️ por [Tu Nombre] - ¡Gracias por visitar!
+Hecho con ❤️ por [Orlando López] - ¡Gracias por visitar!
