@@ -11,7 +11,7 @@ import { PROJECTS } from "../consts/const";
 import type { ProjectItem as ProjectItemType } from "../consts/types";
 
 // Extendemos el tipo ProjectItem para incluir la propiedad de animación
-interface ProjectItem extends Omit<ProjectItemType, 'animation'> {
+interface ProjectItem extends Omit<ProjectItemType, "animation"> {
   animation: string; // El nombre de la clase CSS para la animación
 }
 

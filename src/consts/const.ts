@@ -220,6 +220,22 @@ export const TAGS = {
 
 export const PROJECTS: ProjectItem[] = [
   {
+    id: "nexus",
+    title: "NexusChat ",
+    description:
+      "Un chatbot inteligente con interfaz moderna que permite conversaciones naturales, análisis de imágenes y generación visual. Desarrollado con NextJs, Tailwind y SDK de Vercel para una experiencia fluida y responsiva.",
+    image: "/images/nexus.png",
+    links: [
+      {
+        id: "nexus-links",
+        demo: "https://nexus-chatbot-nine.vercel.app/",
+        code: "https://github.com/OrlandoDev17/nexus-chatbot",
+      },
+    ],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.SUPABASE, TAGS.GIT],
+    animation: "slide-in-left",
+  },
+  {
     id: "goalmind",
     title: "GoalMind",
     description:

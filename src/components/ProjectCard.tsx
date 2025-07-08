@@ -16,7 +16,7 @@ export default function ProjectCard({
   return (
     <li ref={ref}>
       <article
-        className={`flex flex-col gap-6 rounded-xl shadow-gray-800 shadow-lg max-w-md hover:shadow-xl transition dark:shadow-gray-600 ${className}`}
+        className={`flex flex-col gap-6 rounded-xl shadow-gray-800 shadow-lg max-w-md hover:shadow-xl transition dark:shadow-gray-600 min-h-[690px] ${className}`}
       >
         <picture>
           <img
