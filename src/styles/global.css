@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import "@fontsource-variable/montserrat";
+@import "@fontsource-variable/outfit";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant active (&:where(.active, .active *));
+
+@theme {
+  --font-Montserrat: "Montserrat Variable", sans-serif;
+  --font-Outfit: "Outfit Variable", sans-serif;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #3b82f6, #7c3aed, #8b5cf6);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-animation 3s infinite linear;
+  background-clip: text;
+}
+
+.gradient-animation {
+  animation: gradient-animation 3s infinite linear;
+  background-size: 200% 200%;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: var(--font-Montserrat), sans-serif;
+}
+
+body {
+  @apply bg-gray-100 dark:bg-[#131a2a] dark:text-white;
+  transition: background-color 0.4s ease, color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.nav {
+  animation: nav 0.4 both;
+  animation-timeline: scroll();
+  animation-range: 0 200px;
+}
+
+@keyframes nav {
+  to {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+  }
+}
