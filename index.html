@@ -1,13 +1,60 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
   <head>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Portfolio de Orlando López | Desarrollador Front-End"
+    />
+    <meta
+      property="og:description"
+      content="Portafolio de Orlando López, Desarrollador Front-End. Descubre proyectos, habilidades y pasiones en tecnología, diseño web y desarrollo moderno. ¡Conoce más sobre mi trabajo y trayectoria!"
+    />
+    <meta
+      property="og:url"
+      content="https://orlando-lopez-portfolio.vercel.app/"
+    />
+
+    <meta property="og:image" content="./images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter/X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Portfolio de Orlando López | Desarrollador Front-End"
+    />
+    <meta
+      name="twitter:description"
+      content="Portafolio de Orlando López, Desarrollador Front-End. Descubre proyectos, habilidades y pasiones en tecnología, diseño web y desarrollo moderno. ¡Conoce más sobre mi trabajo y trayectoria!"
+    />
+    <meta name="twitter:image" content="./images/og-image.png" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+    <!-- Otros Metadatos -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>Portfolio de Orlando López | Desarrollador FrontEnd</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root" role="main">
+      <!-- El contenido de la aplicación React se renderizará aquí -->
+      <noscript>
+        <div class="no-script">
+          <h1>¡Hola! 👋</h1>
+          <p>Parece que tienes JavaScript deshabilitado en tu navegador.</p>
+          <p>Para una mejor experiencia, te recomiendo activar JavaScript.</p>
+        </div>
+      </noscript>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="/src/main.tsx" defer></script>
+
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" as="script" href="/src/main.tsx" />
   </body>
 </html>
