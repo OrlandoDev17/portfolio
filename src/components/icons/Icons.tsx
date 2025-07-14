@@ -115,3 +115,63 @@ export function FileDonwIcon({ className }: IconProps) {
     </svg>
   );
 }
+
+export function TargetIcon({ className }: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`lucide lucide-target-icon lucide-target ${className}`}
+    >
+      <circle cx="12" cy="12" r="10" />
+      <circle cx="12" cy="12" r="6" />
+      <circle cx="12" cy="12" r="2" />
+    </svg>
+  );
+}
+
+export function CodeIcon({ className }: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`lucide lucide-code-icon lucide-code ${className}`}
+    >
+      <path d="m16 18 6-6-6-6" />
+      <path d="m8 6-6 6 6 6" />
+    </svg>
+  );
+}
+
+export function ActivyIcon({ className }: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`lucide lucide-activity-icon lucide-activity ${className}`}
+    >
+      <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" />
+    </svg>
+  );
+}
