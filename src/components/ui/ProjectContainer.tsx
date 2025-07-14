@@ -1,41 +1,85 @@
-export default function ProjectContainer() {
+// Tipos
+import type { Project } from "@/lib/index";
+// Iconos
+import { TargetIcon, CodeIcon, ActivyIcon } from "@/components/icons/Icons";
+
+export default function ProjectContainer({
+  title,
+  description,
+  stack,
+  image,
+  initialDate,
+  finalDate,
+  status,
+}: Project) {
   return (
-    <article className="grid grid-cols-3 md:grid-cols-2 grid-rows-3 md:grid-rows-5 gap-2 md:gap-2 m-4">
-      <div className="hidden md:block md:col-start-1 md:row-start-1 md:col-span-2 md:row-span-2 bg-gray-300 rounded-md p-10">
-        <img
-          src="/images/nike-store-desktop.png"
-          alt="Mockup del Proyecto Nike Store"
-        />
+    <article className="flex flex-col gap-8">
+      <h2 className="text-3xl font-bold font-Outfit tracking-wide -mb-4">
+        {title}
+      </h2>
+      <div
+        className="flex justify-center px-8 py-4 bg-gray-200 dark:bg-slate-800 rounded-xl shadow-lg 
+      shadow-gray-300 dark:shadow-slate-600"
+      >
+        <img src={image} alt={`Mockup de el proyecto ${title}`} />
       </div>
-      <div className="hidden md:block md:col-start-1 md:row-start-3 md:col-span-2 md:row-span-1 bg-gray-300 rounded-md p-10">
-        <h4>Propósito</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
-          consequatur in ratione laboriosam ipsum error.
+      <div
+        className="flex flex-col gap-2 p-8 bg-white dark:bg-blue-900/20 rounded-xl shadow-lg 
+      shadow-gray-300 dark:shadow-slate-600"
+      >
+        <h3 className="flex items-center gap-2 text-xl font-semibold">
+          <TargetIcon className="size-6 text-blue-500" />
+          Descripción
+        </h3>
+        <p className="text-sm text-gray-800 dark:text-gray-200">
+          {description}
         </p>
       </div>
-      <div className="hidden md:block md:col-start-1 md:row-start-4 md:col-span-1 md:row-span-2 bg-gray-300 rounded-md p-10 h-fit">
-        <h4>Stack</h4>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
-      <div className="hidden md:block md:col-start-2 md:row-start-4 md:col-span-1 md:row-span-2 bg-gray-300 rounded-md p-10 h-fit">
-        <h4>Estado</h4>
-        <ul>
-          <li>
-            Inicio
-            <span className="text-green-500">Enero 2025</span>
-          </li>
-          <li>
-            {" "}
-            Actualizado
-            <span className="text-green-500">Marzo 2025</span>
-          </li>
-          <li>En Produccion</li>
-        </ul>
+      <div className="grid grid-cols-2 gap-8">
+        <div
+          className="flex flex-col gap-2 dark:bg-gradient-to-br dark:from-[#1f1f47] dark:via-[#2a225c] 
+        dark:to-[#1b1b2f] py-6 px-4 rounded-xl shadow-lg shadow-gray-300 dark:shadow-slate-600"
+        >
+          <h4 className="flex items-center gap-2 text-xl font-semibold">
+            <CodeIcon className="size-6 text-violet-500" />
+            Stack
+          </h4>
+          <ul className="grid grid-cols-3 gap-2">
+            {stack.map((tag, index) => (
+              <li
+                className="flex items-center justify-center bg-gray-200 dark:bg-blue-900/20 gap-2 p-2 rounded-xl"
+                key={index}
+              >
+                <tag.icon className="size-8" />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="flex flex-col gap-2 dark:bg-gradient-to-br dark:bg-slate-800 py-6 px-4 rounded-xl shadow-lg shadow-gray-300 dark:shadow-slate-600">
+          <h4 className="flex items-center gap-2 text-xl font-semibold">
+            <ActivyIcon className="size-6 text-blue-500" />
+            Estado
+          </h4>
+          <ul className="flex flex-col gap-2">
+            <li className="flex flex-col gap-2">
+              <span className="text-sm text-gray-600 dark:text-gray-300">
+                Inicio
+              </span>
+              <span className="font-semibold">{initialDate}</span>
+            </li>
+            <li className="flex flex-col gap-2">
+              <span className="text-sm text-gray-600 dark:text-gray-300">
+                Ultima Actualización
+              </span>
+              <span className="font-semibold">{finalDate}</span>
+            </li>
+            <li className="flex flex-col gap-2">
+              <span className="font-medium text-green-400 bg-green-800/40 px-4 py-1 rounded-full w-fit">
+                {status}
+              </span>
+            </li>
+          </ul>
+        </div>
       </div>
     </article>
   );
