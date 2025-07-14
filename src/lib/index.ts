@@ -25,3 +25,19 @@ export interface SectionContainer {
   paragraph: string;
   children?: React.ReactNode;
 }
+
+export interface TAGS {
+  name: string;
+  icon: ComponentType<IconProps>;
+}
+
+export interface Project {
+  id?: string;
+  title: string;
+  description: string;
+  stack: TAGS[];
+  image: string;
+  initialDate: string;
+  finalDate: string;
+  status: string;
+}
