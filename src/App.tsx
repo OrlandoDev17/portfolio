@@ -4,6 +4,8 @@ import Footer from "./components/layout/Footer";
 // Secciones
 import Hero from "./components/sections/Hero";
 import Projects from "./components/sections/Projects";
+import About from "./components/sections/About";
+import Contact from "./components/sections/Contact";
 
 function App() {
   return (
@@ -12,6 +14,9 @@ function App() {
       <main className="relative top-19 max-w-10/12 mx-auto">
         <Hero />
         <Projects />
+        <About />
+        <Contact />
+        <hr className="my-4 text-gray-400 dark:text-gray-600" />
       </main>
       <Footer />
     </>

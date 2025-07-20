@@ -7,11 +7,12 @@ export default function SectionContainer({
   title,
   paragraph,
   children,
+  className,
 }: SectionContainer) {
   return (
     <section
       id={id}
-      className="max-w-9/12 mx-auto flex flex-col justify-center items-center"
+      className={`max-w-9/12 mx-auto flex flex-col justify-center items-center ${className}`}
     >
       <div className="flex flex-col gap-4 items-center">
         <h2 className="flex items-center gap-3 text-3xl font-semibold">
