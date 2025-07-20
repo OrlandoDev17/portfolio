@@ -25,7 +25,7 @@ export default function Hero() {
             Ingeniero en Informática en formación
           </h3>
           <p className="text-xl text-gray-700 dark:text-gray-300 max-w-4/5">
-            <strong className="text-blue-500">+2 Años</strong> de experiencia
+            <strong className="text-blue-500">+3 Años</strong> de experiencia
             autodidacta creando experiencias web modernas e intuitivas
           </p>
         </div>
