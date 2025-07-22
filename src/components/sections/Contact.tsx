@@ -13,7 +13,7 @@ export default function Contact() {
       icon={MailBrand}
       title="Contacto"
       paragraph="¿Tienes un proyecto en mente? ¡Hablemos y hagámoslo realidad!"
-      className="mt-16"
+      className="mt-24"
     >
       <div className="grid grid-cols-3 gap-8 my-8 ">
         {CONTACT_CARDS.map((card) => (

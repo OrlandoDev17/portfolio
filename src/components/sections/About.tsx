@@ -12,7 +12,7 @@ export default function About() {
       icon={UserIcon}
       title="Sobre Mí"
       paragraph="La historia detrás del código y la pasión por crear experiencias digitales excepcionales"
-      className="mt-16"
+      className="mt-24"
     >
       <div className="grid grid-cols-4 gap-8 my-12">
         <article

@@ -39,6 +39,13 @@ import {
   Windsurf,
   Figma,
   PNPM,
+  MySQL,
+  PostgreSQL,
+  NodeJs,
+  Python,
+  Clerk,
+  Firebase,
+  NPM,
 } from "@/components/icons/Tech";
 
 // Constantes
@@ -159,8 +166,18 @@ export const PROJECTS: Project[] = [
 export const TECH_STACK: Tech[] = [
   {
     id: "frontend",
-    title: "FrontEnd",
+    title: "Frontend",
     items: [NextJs, React, Tailwind, TS, JS, Astro, HTML, CSS, Framer, Figma],
+  },
+  {
+    id: "backend",
+    title: "Backend",
+    items: [Supabase, MySQL, PostgreSQL, NodeJs, Python, Clerk, Firebase],
+  },
+  {
+    id: "tools",
+    title: "Herramientas",
+    items: [Figma, Git, Vercel, PNPM, NPM, Windsurf],
   },
 ];
 
