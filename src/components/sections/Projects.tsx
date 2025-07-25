@@ -13,6 +13,7 @@ export default function Projects() {
       icon={BriefcaseIcon}
       title="Proyectos Personales"
       paragraph="Una selección de mis trabajos más recientes donde aplico las últimas tecnologías y mejores prácticas de desarrollo."
+      className="mt-24 2xl:mt-12"
     >
       {PROJECTS.map((project) => (
         <div

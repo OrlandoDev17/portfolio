@@ -79,7 +79,7 @@ export default function BentoProjects({
               className="flex items-center justify-center w-fit gap-2 bg-sky-500/20 dark:bg-slate-800 p-3 rounded-full hover:bg-sky-500 dark:hover:bg-sky-800 hover:scale-110 transition"
             >
               {React.createElement(item, {
-                className: "size-8 text-slate-700 dark:text-slate-200",
+                className: "size-6 2xl:size-8 text-slate-700 dark:text-slate-200",
               })}
             </li>
           ))}

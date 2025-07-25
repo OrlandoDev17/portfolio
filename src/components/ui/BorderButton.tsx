@@ -2,6 +2,7 @@
 import type { Buttons } from "@/lib/index";
 
 export default function BorderButton({ children, href, className }: Buttons) {
+
   return (
     <a
       target="_blank"

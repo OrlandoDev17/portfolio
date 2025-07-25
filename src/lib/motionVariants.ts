@@ -12,8 +12,8 @@ export const fadeInLeft = {
   whileInView: { opacity: 1, x: 0 },
   viewport: { once: true },
   transition: {
-    type: "tween",
-    ease: "linear",
+    type: "tween" as const,
+    ease: "linear" as const,
     duration: 0.5,
   },
 };
