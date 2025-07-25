@@ -7,6 +7,10 @@ import { GitHubBrand } from "../icons/Brands";
 // Componentes
 import GradientButton from "./GradientButton";
 import BorderButton from "./BorderButton";
+// Framer
+import { motion } from "motion/react";
+// Variants
+import { fadeInUp, fadeInLeft, fadeInTopLeft } from "@/lib/motionVariants";
 
 export default function BentoProjects({
   title,
@@ -21,7 +25,10 @@ export default function BentoProjects({
   return (
     <>
       {/* 📛 Título + Imagen */}
-      <div className="col-start-1 row-start-1 col-span-4 row-span-2 md:col-start-1 md:row-start-1 md:col-span-2 md:row-span-2 bg-slate-300 dark:bg-slate-800 border border-slate-200 dark:border-slate-400/40 rounded-md p-6 flex flex-col items-start gap-4 hover:scale-102 transition">
+      <motion.div
+        {...fadeInUp}
+        className="col-start-1 row-start-1 col-span-4 row-span-2 md:col-start-1 md:row-start-1 md:col-span-2 md:row-span-2 bg-slate-300 dark:bg-slate-800 border border-slate-200 dark:border-slate-400/40 rounded-md p-6 flex flex-col items-start gap-4 hover:scale-102 transition"
+      >
         <h2 className="text-3xl font-bold font-Outfit text-slate-900 dark:text-white mb-4">
           {title}
         </h2>
@@ -40,19 +47,27 @@ export default function BentoProjects({
             GitHub
           </BorderButton>
         </div>
-      </div>
+      </motion.div>
 
       {/* 🧠 Descripción */}
-      <div className="col-start-1 row-start-3 col-span-4 md:col-start-3 md:row-start-1 md:col-span-2 md:row-span-1 bg-violet-100 dark:bg-violet-700/20 border border-violet-200 dark:border-violet-700 rounded-md p-6 flex flex-col gap-3 hover:scale-102 transition">
+      <motion.div
+        {...fadeInLeft}
+        transition={{ delay: 0.1 }}
+        className="col-start-1 row-start-3 col-span-4 md:col-start-3 md:row-start-1 md:col-span-2 md:row-span-1 bg-violet-100 dark:bg-violet-700/20 border border-violet-200 dark:border-violet-700 rounded-md p-6 flex flex-col gap-3 hover:scale-102 transition"
+      >
         <h4 className="flex items-center gap-2 text-xl font-semibold text-violet-800 dark:text-violet-400">
           <TargetIcon className="size-6" />
           Descripción
         </h4>
         <p className="text-gray-700 dark:text-gray-300">{description}</p>
-      </div>
+      </motion.div>
 
       {/* 🛠 Stack */}
-      <div className="col-start-1 row-start-4 col-span-2 md:col-start-3 md:row-start-2 md:col-span-1 md:row-span-1 bg-sky-100 dark:bg-sky-900/50 border border-gray-200 dark:border-sky-800/40 rounded-md p-6 flex flex-col gap-3 hover:scale-102 transition">
+      <motion.div
+        {...fadeInTopLeft}
+        transition={{ delay: 0.1 }}
+        className="col-start-1 row-start-4 col-span-2 md:col-start-3 md:row-start-2 md:col-span-1 md:row-span-1 bg-sky-100 dark:bg-sky-900/50 border border-gray-200 dark:border-sky-800/40 rounded-md p-6 flex flex-col gap-3 hover:scale-102 transition"
+      >
         <h4 className="flex items-center gap-2 text-xl font-semibold text-sky-600 dark:text-sky-400">
           <CodeIcon className="size-6" />
           Stack
@@ -69,10 +84,14 @@ export default function BentoProjects({
             </li>
           ))}
         </ul>
-      </div>
+      </motion.div>
 
       {/* 📅 Fechas y Estado */}
-      <div className="col-start-3 row-start-4 col-span-2 md:col-start-4 md:row-start-2 md:col-span-1 md:row-span-1 bg-gradient-to-br from-blue-50 via-blue-100 to-violet-50 dark:from-blue-900/50 dark:via-blue-700/20 dark:to-violet-900/20 border border-blue-200 dark:border-blue-800 rounded-md p-6 flex flex-col gap-3 hover:scale-102 transition">
+      <motion.div
+        {...fadeInTopLeft}
+        transition={{ delay: 0.1 }}
+        className="col-start-3 row-start-4 col-span-2 md:col-start-4 md:row-start-2 md:col-span-1 md:row-span-1 bg-gradient-to-br from-blue-50 via-blue-100 to-violet-50 dark:from-blue-900/50 dark:via-blue-700/20 dark:to-violet-900/20 border border-blue-200 dark:border-blue-800 rounded-md p-6 flex flex-col gap-3 hover:scale-102 transition"
+      >
         <h4 className="flex items-center gap-2 text-xl font-semibold text-blue-800 dark:text-blue-300">
           <ActivyIcon className="size-6" />
           Fechas y Estado
@@ -100,7 +119,7 @@ export default function BentoProjects({
             <span className="text-green-900 dark:text-green-300">{status}</span>
           </li>
         </ul>
-      </div>
+      </motion.div>
     </>
   );
 }
