@@ -4,6 +4,10 @@ import PrincipleList from "../ui/PrincipleList";
 import InfoList from "../ui/InfoList";
 // Iconos
 import { UserIcon } from "../icons/Icons";
+// Framer
+import { motion } from "motion/react";
+// Variantes
+import { fadeInUp } from "@/lib/motionVariants";
 
 export default function About() {
   return (
@@ -15,7 +19,9 @@ export default function About() {
       className="mt-24"
     >
       <div className="grid grid-cols-4 gap-8 my-12">
-        <article
+        <motion.article
+          {...fadeInUp}
+          transition={{ duration: 0.5, delay: 0.2 }}
           className="col-span-2 flex flex-col gap-4 p-8 bg-slate-200 dark:bg-slate-800 rounded-xl 
         border-1 border-slate-200 dark:border-slate-400/40 shadow-lg shadow-slate-400 dark:shadow-slate-700"
         >
@@ -47,7 +53,7 @@ export default function About() {
             visual y funcional, y seguir construyendo herramientas que reflejen
             tanto mi estilo como mi compromiso con el desarrollo profesional.
           </p>
-        </article>
+        </motion.article>
         <article className="col-span-2 row-span-2 flex flex-col gap-6">
           <h3 className="text-2xl font-Outfit font-semibold tracking-wide">
             Principios Profesionales

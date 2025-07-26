@@ -5,6 +5,10 @@ import ContactCard from "../ui/ContactCard";
 import { MailBrand } from "../icons/Brands";
 // Constantes
 import { CONTACT_CARDS } from "@/lib/constants";
+//Framer
+import { motion } from "motion/react";
+// Variantes
+import { containerVariants } from "@/lib/motionVariants";
 
 export default function Contact() {
   return (
@@ -15,11 +19,25 @@ export default function Contact() {
       paragraph="¿Tienes un proyecto en mente? ¡Hablemos y hagámoslo realidad!"
       className="mt-24"
     >
-      <div className="grid grid-cols-3 gap-8 my-8 ">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="grid grid-cols-3 gap-8 my-8"
+      >
         {CONTACT_CARDS.map((card) => (
-          <ContactCard key={card.id} {...card} />
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, x: card.x, y: card.y },
+              visible: { opacity: 1, x: 0, y: 0 },
+            }}
+            key={card.id}
+          >
+            <ContactCard {...card} />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </SectionContainer>
   );
 }

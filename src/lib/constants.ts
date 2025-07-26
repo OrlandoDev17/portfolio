@@ -258,6 +258,7 @@ export const CONTACT_CARDS: ContactCard[] = [
       label: "Enviar Email",
       href: "mailto:orlandodev1707@gmail.com",
     },
+    x: -100,
   },
   {
     id: "2",
@@ -268,6 +269,7 @@ export const CONTACT_CARDS: ContactCard[] = [
       label: "WhatsApp",
       href: "https://wa.me/+584242860846",
     },
+    y: 100,
   },
   {
     id: "3",
@@ -278,5 +280,6 @@ export const CONTACT_CARDS: ContactCard[] = [
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/orlando-lópez1707",
     },
+    x: 100,
   },
 ];
