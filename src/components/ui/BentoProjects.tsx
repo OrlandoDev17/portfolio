@@ -37,13 +37,13 @@ export default function BentoProjects({
           alt={`Imagen del Proyecto ${title}`}
           className="rounded-md"
         />
-        <div className="flex items-center justify-center gap-4 w-full">
+        <div className="flex items-end justify-center gap-4 w-full">
           <GradientButton className="px-8" href={links.demo}>
-            <RokectIcon className="size-7" />
+            <RokectIcon className="2xl:size-7 size-5" />
             Demo
           </GradientButton>
           <BorderButton className="px-8" href={links.github}>
-            <GitHubBrand className="size-7" />
+            <GitHubBrand className="2xl:size-7 size-5" />
             GitHub
           </BorderButton>
         </div>
