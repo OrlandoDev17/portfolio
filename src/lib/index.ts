@@ -74,4 +74,6 @@ export interface ContactCard {
     label: string;
     href: string;
   };
+  x?: number;
+  y?: number;
 }

@@ -1,3 +1,18 @@
+import type { Variants } from "motion";
+
+// Container
+export const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.1,
+      ease: "easeOut",
+    },
+  },
+};
+
 // 🔽 Fade In Up
 export const fadeInUp = {
   initial: { opacity: 0, y: 80 },

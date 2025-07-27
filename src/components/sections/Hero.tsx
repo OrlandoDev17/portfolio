@@ -8,7 +8,12 @@ import { SOCIAL_ITEMS } from "@/lib/constants";
 // Framer
 import { motion } from "motion/react";
 // Variantes
-import { fadeInUp, fadeInLeft, scaleIn } from "@/lib/motionVariants";
+import {
+  fadeInUp,
+  fadeInLeft,
+  scaleIn,
+  containerVariants,
+} from "@/lib/motionVariants";
 
 export default function Hero() {
   return (
@@ -56,17 +61,7 @@ export default function Hero() {
             Descargar CV
           </BorderButton>
           <motion.ul
-            variants={{
-              hidden: { opacity: 0 },
-              visible: {
-                opacity: 1,
-                transition: {
-                  staggerChildren: 0.2,
-                  delayChildren: 0.1,
-                  ease: "easeOut",
-                },
-              },
-            }}
+            variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -76,7 +71,7 @@ export default function Hero() {
               <motion.li
                 key={id}
                 variants={{
-                  hidden: { opacity: 0, y: 40 },
+                  hidden: { opacity: 0, y: 30 },
                   visible: { opacity: 1, y: 0 },
                 }}
               >

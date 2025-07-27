@@ -1,11 +1,25 @@
 // Constantes
 import { PRINCIPLES_LIST } from "@/lib/constants";
+// Framer
+import { motion } from "motion/react";
+// Variantes
+import { containerVariants } from "@/lib/motionVariants";
 
 export default function PrincipleList() {
   return (
-    <ul className="flex flex-col gap-6">
+    <motion.ul
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="flex flex-col gap-6"
+    >
       {PRINCIPLES_LIST.map(({ id, icon: Icon, title, description }) => (
-        <li
+        <motion.li
+          variants={{
+            hidden: { opacity: 0, y: 60 },
+            visible: { opacity: 1, y: 0 },
+          }}
           className="flex items-center gap-4 bg-slate-200 dark:bg-slate-800 p-4 rounded-xl 
           border-1 border-slate-200 dark:border-slate-400/40 shadow-md shadow-slate-400 dark:shadow-slate-700"
           key={id}
@@ -19,8 +33,8 @@ export default function PrincipleList() {
               {description}
             </p>
           </div>
-        </li>
+        </motion.li>
       ))}
-    </ul>
+    </motion.ul>
   );
 }
