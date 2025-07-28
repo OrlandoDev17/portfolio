@@ -18,7 +18,7 @@ export default function Projects() {
       {PROJECTS.map((project) => (
         <div
           key={project.id}
-          className="grid grid-cols-4 md:grid-cols-4 grid-rows-4 md:grid-rows-2 gap-4 mb-4 mt-12"
+          className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-4 mb-1 mt-12"
         >
           <BentoProjects {...project} />
         </div>

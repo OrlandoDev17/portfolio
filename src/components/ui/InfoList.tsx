@@ -13,7 +13,7 @@ export default function InfoList() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="flex gap-6"
+      className="flex gap-3 xs:gap-6"
     >
       {INFO_LIST.map(
         ({ id, counter, title, textColor, bgColor, borderColor }) => (

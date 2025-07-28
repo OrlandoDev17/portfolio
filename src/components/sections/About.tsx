@@ -18,17 +18,21 @@ export default function About() {
       paragraph="La historia detrás del código y la pasión por crear experiencias digitales excepcionales"
       className="mt-24"
     >
-      <div className="grid grid-cols-4 gap-8 my-12">
+      <div
+        className="grid grid-cols-4 gap-6 my-12
+        max-sm:grid-cols-1 xs:gap-6 xs:my-6 place-items-center"
+      >
         <motion.article
           {...fadeInUp}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="col-span-2 flex flex-col gap-4 p-8 bg-slate-200 dark:bg-slate-800 rounded-xl 
-        border-1 border-slate-200 dark:border-slate-400/40 shadow-lg shadow-slate-400 dark:shadow-slate-700"
+          className="col-span-2 flex flex-col gap-4 p-8 bg-slate-200 dark:bg-slate-800 rounded-xl
+        border-1 border-slate-200 dark:border-slate-400/40 shadow-lg shadow-slate-400 dark:shadow-slate-700
+        max-sm:col-span-1 max-sm:p-6 max-xs:p-4 max-sm:gap-4"
         >
-          <h3 className="text-2xl font-Outfit font-semibold tracking-wide mb-2">
+          <h3 className="text-2xl font-Outfit font-semibold tracking-wide mb-2 max-sm:text-xl max-xs:text-lg">
             Mi Trayectoria
           </h3>
-          <p className="text-sm text-gray-800 dark:text-gray-300 text-pretty">
+          <p className="text-base max-sm:text-sm max-xs:text-xs text-gray-800 dark:text-gray-300 text-pretty">
             Con más de 3 años de experiencia en desarrollo web, he evolucionado
             de los fundamentos básicos en HTML a dominar tecnologías modernas
             como React, Next.js, JavaScript y TypeScript. Mi especialidad en
@@ -37,7 +41,7 @@ export default function About() {
             velocidad. Me enfoco en mantener el código modular y semántico,
             buscando siempre una base técnica sólida que respalde la estética.
           </p>
-          <p className="text-sm text-gray-800 dark:text-gray-300 text-pretty">
+          <p className="text-base max-sm:text-sm max-xs:text-xs text-gray-800 dark:text-gray-300 text-pretty">
             Soy profundamente creativo y me apasiona diseñar soluciones con un
             enfoque moderno y minimalista. Mi trabajo se centra en transmitir
             claridad, ritmo visual y profesionalismo desde la primera impresión.
@@ -46,7 +50,7 @@ export default function About() {
             patrones avanzados y mantenerme en evolución continua como
             desarrollador.
           </p>
-          <p className="text-sm text-gray-800 dark:text-gray-300 text-pretty">
+          <p className="text-base max-sm:text-sm max-xs:text-xs text-gray-800 dark:text-gray-300 text-pretty">
             Actualmente mi objetivo es seguir creciendo como frontend técnico, y
             dar el siguiente paso hacia el trabajo remoto. Me motiva poder
             colaborar en proyectos reales desde cualquier parte, aportar valor

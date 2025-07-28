@@ -24,7 +24,7 @@ export default function Contact() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="grid grid-cols-3 gap-8 my-8"
+        className="grid grid-cols-1 md:grid-cols-3 gap-8 my-8"
       >
         {CONTACT_CARDS.map((card) => (
           <motion.div

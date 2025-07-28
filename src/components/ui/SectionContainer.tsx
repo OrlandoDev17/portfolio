@@ -16,7 +16,7 @@ export default function SectionContainer({
   return (
     <section
       id={id}
-      className={`relative max-w-11/12 2xl:max-w-9/12 mx-auto flex flex-col justify-center items-center ${className}`}
+      className={`relative max-w-11/12 md:max-w-9/12 mx-auto flex flex-col justify-center items-center ${className}`}
     >
       <motion.div
         {...fadeInUp}
