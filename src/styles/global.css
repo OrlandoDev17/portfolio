@@ -8,6 +8,7 @@
 @theme {
   --font-Montserrat: "Montserrat Variable", sans-serif;
   --font-Outfit: "Outfit Variable", sans-serif;
+  --breakpoint-xs: 425px;
 }
 
 @keyframes gradient-animation {

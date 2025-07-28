@@ -17,7 +17,7 @@ import {
 
 export default function Hero() {
   return (
-    <section className="max-w-9/12 mx-auto flex justify-between items-center h-[80vh]">
+    <section className="max-w-11/12 md:max-w-9/12 mx-auto flex flex-col md:flex-row justify-between items-center h-auto md:h-[80vh] gap-8 md:gap-0">
       <article className="flex flex-col gap-6">
         <motion.span
           {...fadeInLeft}
@@ -29,27 +29,27 @@ export default function Hero() {
         <div className="flex flex-col gap-4">
           <motion.h1
             {...fadeInUp}
-            className="text-6xl 2xl:text-7xl font-extrabold font-Outfit gradient-text"
+            className="text-4xl xs:text-6xl 2xl:text-7xl font-extrabold font-Outfit gradient-text"
           >
             Orlando López
           </motion.h1>
           <motion.h2
             {...fadeInUp}
-            className="text-3xl 2xl:text-4xl font-bold font-Outfit mt-2"
+            className="text-2xl xs:text-3xl 2xl:text-4xl font-bold font-Outfit mt-2"
           >
             Desarrollador Front-End
           </motion.h2>
           <motion.h3
             {...fadeInLeft}
             transition={{ delay: 0.2 }}
-            className="text-lg 2xl:text-xl text-gray-700 dark:text-gray-300"
+            className="text-base xs:text-lg 2xl:text-xl text-gray-700 dark:text-gray-300"
           >
             Ingeniero en Informática en formación
           </motion.h3>
           <motion.p
             {...fadeInLeft}
             transition={{ delay: 0.4 }}
-            className="text-lg 2xl:text-xl text-gray-700 dark:text-gray-300 max-w-4/5"
+            className="text-base xs:text-lg 2xl:text-xl text-gray-700 dark:text-gray-300 md:max-w-4/5"
           >
             <strong className="text-blue-500">+3 Años</strong> de experiencia
             autodidacta creando experiencias web modernas e intuitivas
@@ -81,14 +81,17 @@ export default function Hero() {
           </motion.ul>
         </motion.div>
       </article>
-      <motion.picture {...scaleIn}>
+      <motion.picture
+        {...scaleIn}
+        className="w-full flex justify-center md:justify-end items-center md:w-auto md:z-10"
+      >
         <img
-          className="w-112 dark:hidden"
+          className="block w-full max-w-[18rem] md:max-w-[28rem] h-auto dark:hidden"
           src="/images/orlando-lopez.png"
           alt="Orlando López"
         />
         <img
-          className="w-112 hidden dark:block"
+          className="w-full max-w-[18rem] md:max-w-[28rem] h-auto hidden dark:block"
           src="/images/orlando-lopez-dark.png"
           alt="Orlando López"
         />

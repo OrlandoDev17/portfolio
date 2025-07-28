@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="relative top-28 2xl:top-19 max-w-12/12 2xl:max-w-10/12 mx-auto">
+      <main className="relative top-30 md:top-28 2xl:top-19 2xl:max-w-10/12 mx-auto">
         <Hero />
         <Projects />
         <Stack />
