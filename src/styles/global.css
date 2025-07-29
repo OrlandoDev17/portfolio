@@ -1,8 +1,15 @@
-@import 'tailwindcss';
-@import '@fontsource-variable/montserrat';
+@import "tailwindcss";
+@import "@fontsource-variable/montserrat";
+@import "@fontsource-variable/outfit";
 
 @custom-variant dark (&:where(.dark, .dark *));
 @custom-variant active (&:where(.active, .active *));
+
+@theme {
+  --font-Montserrat: "Montserrat Variable", sans-serif;
+  --font-Outfit: "Outfit Variable", sans-serif;
+  --breakpoint-xs: 425px;
+}
 
 @keyframes gradient-animation {
   0% {
@@ -33,22 +40,148 @@
 
 html {
   scroll-behavior: smooth;
-  box-sizing: border-box;
-  font-family: 'Montserrat Variable', sans-serif;
+  font-family: var(--font-Montserrat), sans-serif;
 }
 
 body {
-  @apply bg-gray-50 dark:bg-zinc-800;
+  @apply bg-gray-100 dark:bg-[#131a2a] dark:text-white;
+  transition: background-color 0.4s ease, color 0.2s ease;
+  box-sizing: border-box;
 }
 
 .nav {
-  animation: nav-shadown 1s linear both;
+  animation: nav 0.4 both;
   animation-timeline: scroll();
-  animation-range: 0 300px;
+  animation-range: 0 200px;
 }
 
-@keyframes nav-shadown {
+@keyframes nav {
   to {
-    box-shadow: 0 12px 25px -9px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
   }
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  padding-block: 1rem;
+}
+
+.slider-track {
+  display: flex;
+  gap: 3rem;
+  animation: scroll 22s linear infinite;
+  width: max-content;
+  will-change: transform;
+}
+
+.animate-slider-reverse {
+  animation: scroll-reverse 22s linear infinite;
+}
+
+/* Sombra sutil para el slider */
+.slider {
+  box-shadow: 0 4px 20px 0 rgba(60, 60, 120, 0.06);
+  border-radius: 1.5rem;
+  background: linear-gradient(
+    90deg,
+    rgba(59, 130, 246, 0.025) 0%,
+    rgba(124, 58, 237, 0.03) 100%
+  );
+  backdrop-filter: blur(2px);
+}
+
+.slider-gradient-left {
+  background: linear-gradient(
+    to right,
+    rgba(243, 244, 246, 0.7) 60%,
+    transparent 100%
+  );
+}
+.slider-gradient-right {
+  background: linear-gradient(
+    to left,
+    rgba(243, 244, 246, 0.7) 60%,
+    transparent 100%
+  );
+}
+@media (prefers-color-scheme: dark) {
+  .slider-gradient-left {
+    background: linear-gradient(
+      to right,
+      rgba(19, 26, 42, 0.7) 60%,
+      transparent 100%
+    );
+  }
+  .slider-gradient-right {
+    background: linear-gradient(
+      to left,
+      rgba(19, 26, 42, 0.7) 60%,
+      transparent 100%
+    );
+  }
+}
+
+.slider-track > div {
+  display: flex;
+  align-items: center;
+  min-width: 64px;
+}
+
+.slider-track > div:hover {
+  opacity: 1;
+}
+
+.slider-track svg {
+  transition: transform 0.3s cubic-bezier(0.4, 2, 0.6, 1), filter 0.3s;
+  filter: drop-shadow(0 1px 5px rgba(59, 130, 246, 0.08));
+  background-blend-mode: soft-light;
+}
+
+.slider-track svg:hover {
+  transform: scale(1.08) translateY(-2px);
+  filter: drop-shadow(0 4px 14px rgba(124, 58, 237, 0.1));
+  opacity: 1;
+}
+
+.slider-track svg:hover {
+  transform: scale(1.13) translateY(-4px);
+  filter: drop-shadow(0 6px 16px rgba(124, 58, 237, 0.15));
+}
+
+.slider-track > div {
+  display: flex;
+  align-items: center;
+}
+
+.slider-track svg {
+  transition: transform 0.3s ease;
+}
+
+.slider-track svg:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slider-reverse {
+  animation: scroll-reverse 18s linear infinite;
 }
