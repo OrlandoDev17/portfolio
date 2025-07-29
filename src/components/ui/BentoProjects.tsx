@@ -134,15 +134,33 @@ export default function BentoProjects({
           </li>
           <li>
             <span className="font-semibold text-blue-800 dark:text-blue-300">
-              Fecha Final:
+              Última Actualización:
             </span>
             <br />
             <span className="text-sm text-gray-700 dark:text-gray-300">
               {finalDate}
             </span>
           </li>
-          <li className="bg-green-200 dark:bg-green-500/50 px-5 py-2 rounded-full w-fit">
-            <span className="text-green-900 dark:text-green-300">{status}</span>
+          <li
+            className={
+              status === "En Desarrollo"
+                ? "bg-green-200 dark:bg-green-500/50 px-5 py-2 rounded-full w-fit border border-green-300 dark:border-green-600"
+                : status === "En Producción"
+                ? "bg-blue-200 dark:bg-blue-500/50 px-5 py-2 rounded-full w-fit border border-blue-300 dark:border-blue-600"
+                : "bg-yellow-100 dark:bg-yellow-400/40 px-5 py-2 rounded-full w-fit border border-yellow-300 dark:border-yellow-600"
+            }
+          >
+            <span
+              className={
+                status === "En Desarrollo"
+                  ? "text-green-900 dark:text-green-300 font-semibold"
+                  : status === "En Producción"
+                  ? "text-blue-900 dark:text-blue-300 font-semibold"
+                  : "text-yellow-900 dark:text-yellow-300 font-semibold"
+              }
+            >
+              {status}
+            </span>
           </li>
         </ul>
       </motion.div>

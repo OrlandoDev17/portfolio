@@ -124,7 +124,7 @@ export const PROJECTS: Project[] = [
     ],
     image: "/images/nike-store-desktop.webp",
     initialDate: "Julio del 2025",
-    finalDate: "En Desarrollo",
+    finalDate: "11 de Julio del 2025",
     status: "En Desarrollo",
     links: {
       github: "https://github.com/OrlandoDev17/nike-ecommerce",
@@ -155,10 +155,25 @@ export const PROJECTS: Project[] = [
     image: "/images/sneakerstore-desktop.webp",
     initialDate: "Abril del 2025",
     finalDate: "12 de Mayo del 2025",
-    status: "En Produccion",
+    status: "En Producción",
     links: {
       github: "https://github.com/OrlandoDev17/sneaker-store",
       demo: "https://sneaker-store-nu.vercel.app/",
+    },
+  },
+  {
+    id: "goalmind",
+    title: "GoalMind",
+    description:
+      "GoalMind es una plataforma innovadora para el seguimiento de objetivos, impulsada por IA. Diseñada para ayudar a los usuarios a visualizar su progreso, establecer metas claras y optimizar su productividad con herramientas inteligentes.",
+    stack: [NextJs, CSS, TS, Git, Vercel, Windsurf, PNPM, Supabase],
+    image: "/images/goalmind-desktop.webp",
+    initialDate: "Mayo del 2025",
+    finalDate: "23 de Mayo del 2025",
+    status: "En Pausa",
+    links: {
+      github: "https://github.com/OrlandoDev17/goalmind",
+      demo: "https://goalmind.vercel.app/",
     },
   },
 ];

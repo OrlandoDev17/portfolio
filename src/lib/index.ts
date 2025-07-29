@@ -36,7 +36,7 @@ export interface Project {
   image: string;
   initialDate: string;
   finalDate: string;
-  status: string;
+  status: "En Desarrollo" | "En Producción" | "En Pausa";
   links: {
     github: string;
     demo: string;
