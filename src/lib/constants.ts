@@ -122,7 +122,7 @@ export const PROJECTS: Project[] = [
       Figma,
       Git,
     ],
-    image: "/images/nike-store-desktop.png",
+    image: "/images/nike-store-desktop.webp",
     initialDate: "Julio del 2025",
     finalDate: "En Desarrollo",
     status: "En Desarrollo",
@@ -137,7 +137,7 @@ export const PROJECTS: Project[] = [
     description:
       "Chatbot conversacional impulsado por inteligencia artificial, construido con la SDK AI de Vercel y múltiples modelos combinados. Diseñado para brindar respuestas precisas en tiempo real, adaptarse a diferentes estilos de conversación y demostrar el potencial de integración avanzada entre frontend y capacidades LLM.",
     stack: [NextJs, Tailwind, TS, Vercel, Git, Windsurf, PNPM, Figma],
-    image: "/images/nexus-desktop.png",
+    image: "/images/nexus-desktop.webp",
     initialDate: "Junio del 2025",
     finalDate: "9 de Julio del 2025",
     status: "En Producción",
@@ -152,7 +152,7 @@ export const PROJECTS: Project[] = [
     description:
       "Tienda digital especializada en zapatillas, desarrollada con Astro, React y Tailwind CSS. Este proyecto destaca por la implementación funcional del carrito de compras, navegación fluida y un diseño modular enfocado en rendimiento y escalabilidad desde el frontend.",
     stack: [Astro, React, Tailwind, JS, Git, Vercel, Windsurf, Figma],
-    image: "/images/sneakerstore-desktop.png",
+    image: "/images/sneakerstore-desktop.webp",
     initialDate: "Abril del 2025",
     finalDate: "12 de Mayo del 2025",
     status: "En Produccion",

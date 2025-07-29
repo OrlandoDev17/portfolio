@@ -87,12 +87,12 @@ export default function Hero() {
       >
         <img
           className="block w-full max-w-[18rem] md:max-w-[28rem] h-auto dark:hidden"
-          src="/images/orlando-lopez.png"
+          src="/images/orlando-lopez.webp"
           alt="Orlando López"
         />
         <img
           className="w-full max-w-[18rem] md:max-w-[28rem] h-auto hidden dark:block"
-          src="/images/orlando-lopez-dark.png"
+          src="/images/orlando-lopez-dark.webp"
           alt="Orlando López"
         />
       </motion.picture>
