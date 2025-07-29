@@ -30,7 +30,7 @@ export default function BentoProjects({
     stackTile:
       "bg-sky-100 dark:bg-sky-900/50 border border-gray-200 dark:border-sky-800/40 rounded-md p-6 flex flex-col gap-3 hover:scale-102 transition",
     dateTile:
-      "bg-gradient-to-br from-blue-500 to-violet-700 dark:from-blue-900/50 dark:via-blue-700/20 dark:to-violet-900/20 border border-blue-200 dark:border-blue-800 rounded-md p-6 flex flex-col gap-3 hover:scale-102 transition",
+      "bg-gradient-to-br from-blue-500/20 to-violet-700/20 dark:from-blue-900/50 dark:via-blue-700/20 dark:to-violet-900/20 border border-blue-200 dark:border-blue-800 rounded-md p-6 flex flex-col gap-3 hover:scale-102 transition",
   };
 
   const bentoPositions = {
@@ -41,7 +41,7 @@ export default function BentoProjects({
     stackTile:
       "xs:col-start-1 xs:row-start-4 xs:col-span-1 xs:row-span-1 md:col-start-3 md:row-start-2 md:col-span-1 md:row-span-1 2xl:col-start-3 2xl:row-start-2 2xl:col-span-1 2xl:row-span-1 h-fit",
     dateTile:
-      " xs:col-start-2 xs:row-start-4 xs:col-span-1 xs:row-span-1 md:col-start-4 md:row-start-2 md:col-span-1 md:row-span-1 2xl:col-start-4 2xl:row-start-2 2xl:col-span-1 2xl:row-span-1 h-fit",
+      " xs:col-start-2 xs:row-start-4 xs:col-span-1 xs:row-span-1 md:col-start-4 md:row-start-2 md:col-span-1 md:row-span-1 2xl:col-start-4 2xl:row-start-2 2xl:col-span-1 2xl:row-span-1 h-fit 2xl:h-full",
   };
 
   return (
