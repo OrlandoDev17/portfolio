@@ -35,12 +35,14 @@ export interface Project {
   stack: Array<ComponentType<IconProps>>;
   image: string;
   initialDate: string;
-  finalDate: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  lastUpdate?: any;
   status: "En Desarrollo" | "En Producción" | "En Pausa";
   links: {
     github: string;
     demo: string;
   };
+  repoPath?: string;
 }
 
 export interface Tech {

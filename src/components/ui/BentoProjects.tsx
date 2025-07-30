@@ -17,7 +17,7 @@ export default function BentoProjects({
   description,
   image,
   stack,
-  finalDate,
+  lastUpdate,
   initialDate,
   status,
   links,
@@ -138,7 +138,7 @@ export default function BentoProjects({
             </span>
             <br />
             <span className="text-sm text-gray-700 dark:text-gray-300">
-              {finalDate}
+              {lastUpdate}
             </span>
           </li>
           <li

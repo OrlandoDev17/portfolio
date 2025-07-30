@@ -124,12 +124,13 @@ export const PROJECTS: Project[] = [
     ],
     image: "/images/nike-store-desktop.webp",
     initialDate: "Julio del 2025",
-    finalDate: "11 de Julio del 2025",
+    // updateDate: "11 de Julio del 2025",
     status: "En Desarrollo",
     links: {
       github: "https://github.com/OrlandoDev17/nike-ecommerce",
       demo: "https://nike-ecommerce-blue.vercel.app/",
     },
+    repoPath: "OrlandoDev17/nike-ecommerce",
   },
   {
     id: "nexus-chatbot",
@@ -139,12 +140,13 @@ export const PROJECTS: Project[] = [
     stack: [NextJs, Tailwind, TS, Vercel, Git, Windsurf, PNPM, Figma],
     image: "/images/nexus-desktop.webp",
     initialDate: "Junio del 2025",
-    finalDate: "9 de Julio del 2025",
+    // updateDate: "9 de Julio del 2025",
     status: "En Producción",
     links: {
       github: "https://github.com/OrlandoDev17/nexus-chatbot",
       demo: "https://nexus-chatbot-nine.vercel.app/",
     },
+    repoPath: "OrlandoDev17/nexus-chatbot",
   },
   {
     id: "sneaker-store",
@@ -154,12 +156,13 @@ export const PROJECTS: Project[] = [
     stack: [Astro, React, Tailwind, JS, Git, Vercel, Windsurf, Figma],
     image: "/images/sneakerstore-desktop.webp",
     initialDate: "Abril del 2025",
-    finalDate: "12 de Mayo del 2025",
+    // updateDate: "12 de Mayo del 2025",
     status: "En Producción",
     links: {
       github: "https://github.com/OrlandoDev17/sneaker-store",
       demo: "https://sneaker-store-nu.vercel.app/",
     },
+    repoPath: "OrlandoDev17/sneaker-store",
   },
   {
     id: "goalmind",
@@ -169,12 +172,13 @@ export const PROJECTS: Project[] = [
     stack: [NextJs, CSS, TS, Git, Vercel, Windsurf, PNPM, Supabase],
     image: "/images/goalmind-desktop.webp",
     initialDate: "Mayo del 2025",
-    finalDate: "23 de Mayo del 2025",
+    // updateDate: "23 de Mayo del 2025",
     status: "En Pausa",
     links: {
       github: "https://github.com/OrlandoDev17/goalmind",
       demo: "https://goalmind.vercel.app/",
     },
+    repoPath: "OrlandoDev17/goalmind",
   },
 ];
 
